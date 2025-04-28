@@ -1,0 +1,1 @@
+export { MenacwyByAnima } from "./MenacwyByAnima";

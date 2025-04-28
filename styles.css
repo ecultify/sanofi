@@ -1,0 +1,19 @@
+.book-btn {
+    background-color: #FF6B00;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Make all booking buttons consistent on mobile */
+@media (max-width: 767px) {
+    .btn-book, 
+    .hero-section .btn-primary,
+    .cta-section .btn-primary,
+    .book-btn {
+        width: 100% !important;
+        display: block !important;
+        margin-top: 15px;
+    }
+}
