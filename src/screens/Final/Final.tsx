@@ -11,33 +11,38 @@ import { FrameWrapperByAnima } from "./sections/FrameWrapperByAnima";
 import { GroupByAnima } from "./sections/GroupByAnima";
 import { MenacwyByAnima } from "./sections/MenacwyByAnima";
 
+// Import animation utility
+import { fadeIn, slideInFromBottom, slideInFromLeft, slideInFromRight, delay100, delay200, delay300, delay400, delay500 } from "../../lib/animation";
+
 export const Final = (): JSX.Element => {
   return (
     <div className="bg-white flex flex-row justify-center w-full min-h-screen">
       <div className="bg-white w-full max-w-[1440px]">
         {/* Hero Banner Section */}
         <header className="container mx-auto px-4 pt-10 pb-8">
-          <img
-            className="w-full max-w-[385px] h-auto object-cover"
-            alt="Logo"
-            src="/image-24.png"
-          />
+          <a href="/" className={`inline-block ${fadeIn}`}>
+            <img
+              className="w-full max-w-[385px] h-auto object-cover"
+              alt="Logo"
+              src="/image-24.png"
+            />
+          </a>
         </header>
 
         <section className="container mx-auto px-4 py-8 md:py-12">
           <Card className="w-full h-auto md:h-[610px] bg-[#5279f6] rounded-[30px] border border-solid border-[#6e91f7] relative overflow-hidden">
           <CardContent className="p-0">
-            <div className="w-full h-[550px] md:h-[608px] bg-[url(/image-37.png)] bg-cover bg-center md:bg-[100%_100%] relative flex flex-col items-center md:block">
+            <div className="w-full h-[600px] md:h-[608px] bg-[url(/image-37.png)] bg-cover bg-center md:bg-[100%_100%] relative flex flex-col items-center md:block">
 
-              <div className="text-center md:text-left mt-8 md:mt-0 md:absolute md:top-[124px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-normal text-white text-[24px] md:text-[32.5px] tracking-[0] leading-normal">
+              <div className={`text-center md:text-left mt-8 md:mt-0 md:absolute md:top-[124px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-normal text-white text-[24px] md:text-[32.5px] tracking-[0] leading-normal ${slideInFromLeft}`}>
                 Traveling to the USA 🇺🇸 for Higher Studies?
               </div>
               
-              <div className="text-center md:text-left px-4 md:px-0 mt-4 md:mt-0 md:absolute md:top-[180px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-bold text-white text-[20px] md:text-[28px] tracking-[0] leading-normal max-w-[90%] md:max-w-[480px]">
+              <div className={`text-center md:text-left px-4 md:px-0 mt-4 md:mt-0 md:absolute md:top-[180px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-bold text-white text-[20px] md:text-[28px] tracking-[0] leading-normal max-w-[90%] md:max-w-[480px] ${slideInFromLeft} ${delay200}`}>
                 Consult a Doctor today to know more about Meningococcal Vaccine
               </div>
 
-              <div className="mt-auto mb-6 md:mb-0 md:absolute md:top-[434px] md:left-[39px] w-full md:w-auto px-4 md:px-0">
+              <div className={`mt-10 md:mt-auto mb-6 md:mb-0 md:absolute md:top-[434px] md:left-[39px] w-full md:w-auto px-4 md:px-0 ${slideInFromBottom} ${delay400}`}>
                 <a href="https://www.practo.com/bangalore/pediatrician?utm_source=microsite&utm_medium=cta&utm_campaign=dr_reddys_vaccination_campaign" target="_blank" rel="noopener noreferrer" className="inline-block w-full">
                   <Button className="w-full max-w-[400px] md:w-[500px] h-[60px] md:h-[72px] px-[40px] md:px-[50px] bg-white rounded-[10px] hover:bg-white/90 relative mx-auto md:mx-0">
                     <span className="absolute left-[31px] top-1/2 transform -translate-y-1/2 font-['Open_Sans',Helvetica] font-semibold text-[#416af6] text-xl md:text-[26px]">
@@ -54,7 +59,7 @@ export const Final = (): JSX.Element => {
               </div>
 
               <img
-                className="w-[300px] md:w-[616px] h-auto md:h-[522px] mx-auto mt-6 md:mt-0 md:absolute md:bottom-0 md:top-[87px] md:left-[639px] object-contain md:object-cover"
+                className={`w-[300px] md:w-[616px] h-auto md:h-[522px] mx-auto mt-6 md:mt-0 md:absolute md:bottom-0 md:top-[87px] md:left-[639px] object-contain md:object-cover ${slideInFromRight} ${delay300}`}
                 alt="Layer gigapixel"
                 src="/layer-2-gigapixel-very-compressed-scalse-4-00x.png"
               />
@@ -64,24 +69,24 @@ export const Final = (): JSX.Element => {
         </section>
 
         {/* US States Section - restore to normal, visible on all devices */}
-        <section className="container mx-auto px-4 py-4 md:py-8 overflow-x-auto">
+        <section className={`container mx-auto px-4 py-4 md:py-8 overflow-x-auto ${fadeIn} ${delay100}`}>
           <ElementUSStatesByAnima />
         </section>
 
         {/* Group Section */}
-        <section className="container mx-auto px-4 py-8 md:py-12">
+        <section className={`container mx-auto px-4 py-8 md:py-12 ${fadeIn} ${delay200}`}>
           <div className="w-full">
             <GroupByAnima />
           </div>
         </section>
 
         {/* Frame Section */}
-        <section className="py-8 md:py-16">
+        <section className={`py-8 md:py-16 ${fadeIn} ${delay300}`}>
           <FrameByAnima />
         </section>
 
         {/* Risk Info Section */}
-        <section className="container mx-auto px-4 py-8 md:py-16">
+        <section className={`container mx-auto px-4 py-8 md:py-16 ${fadeIn} ${delay400}`}>
           <h2 className="text-center text-[28px] md:text-[42px] text-[#416af6] font-normal mb-6 md:mb-12">
             <span className="tracking-[-0.42px]">Who is at risk of </span>
             <span className="font-bold tracking-[-0.42px]">
@@ -145,19 +150,19 @@ export const Final = (): JSX.Element => {
         </section>
 
         {/* Frame Wrapper Section */}
-        <section className="container mx-auto px-4 py-8 md:py-16">
+        <section className={`container mx-auto px-4 py-8 md:py-16 ${fadeIn} ${delay500}`}>
           <FrameWrapperByAnima />
         </section>
 
         {/* Doctor Section */}
-        <section className="container mx-auto px-4 py-8 md:py-16">
+        <section className={`container mx-auto px-4 py-8 md:py-16 ${fadeIn} ${delay300}`}>
           <div className="relative">
             <DivWrapperByAnima />
           </div>
         </section>
 
         {/* References Section */}
-        <section className="container mx-auto px-4 py-8 md:py-16">
+        <section className={`container mx-auto px-4 py-8 md:py-16 ${fadeIn} ${delay500}`}>
           <h2 className="text-[32px] md:text-[42px] font-bold text-[#416af6] mb-8 md:mb-12">
             References
           </h2>
@@ -170,9 +175,11 @@ export const Final = (): JSX.Element => {
         </section>
 
         {/* Footer Section */}
-        <DivByAnima />
+        <div className={`${fadeIn} ${delay500}`}>
+          <DivByAnima />
+        </div>
         
-        <footer className="container mx-auto px-4 py-8">
+        <footer className={`container mx-auto px-4 py-8 ${fadeIn} ${delay500}`}>
           <div className="flex flex-col md:flex-row justify-between gap-4 md:items-center">
             <div className="[font-family:'Open_Sans',Helvetica] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6 text-center md:text-left">
               LMRC code: GGI-CO-A1-AQS-300101634-AM-F24-0641

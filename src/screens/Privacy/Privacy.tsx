@@ -8,11 +8,13 @@ export const Privacy = (): JSX.Element => {
       <div className="bg-white w-full max-w-[1440px]">
         {/* Header Section */}
         <header className="container mx-auto px-4 pt-10 pb-8">
-          <img
-            className="w-full max-w-[385px] h-auto object-cover"
-            alt="Logo"
-            src="/image-24.png"
-          />
+          <a href="/" className="inline-block">
+            <img
+              className="w-full max-w-[385px] h-auto object-cover"
+              alt="Logo"
+              src="/image-24.png"
+            />
+          </a>
         </header>
 
         {/* Main Content */}

@@ -7,8 +7,17 @@ export const DivWrapperByAnima = (): JSX.Element => {
   return (
     <Card className="w-full h-auto md:h-[290px] bg-[#416af6] rounded-[30px] overflow-visible border border-solid pb-0">
       <CardContent className="p-0 h-full relative">
+        {/* Background flag image */}
+        <div className="absolute inset-0 w-full h-full overflow-hidden rounded-[30px]">
+          <img
+            className="w-full h-full object-cover opacity-20"
+            alt="USA Flag Background"
+            src="/flagbg.png"
+          />
+        </div>
+        
         {/* Desktop doctor image */}
-        <div className="hidden md:block absolute left-[114px] bottom-0 -top-14">
+        <div className="hidden md:block absolute left-[114px] bottom-0 -top-14 z-10">
           <img
             className="w-[223px] h-[344px] object-cover"
             alt="Indian doctor posing"
@@ -16,7 +25,7 @@ export const DivWrapperByAnima = (): JSX.Element => {
           />
         </div>
         
-        <div className="pt-6 md:pt-14 px-4 md:pl-[498px] md:pr-6">
+        <div className="pt-6 md:pt-14 px-4 md:pl-[498px] md:pr-6 relative z-10">
           <h2 className="font-['Open_Sans',Helvetica] font-bold text-white text-[32px] md:text-[44.4px] tracking-[-0.92px] leading-tight md:leading-[53.2px] text-center md:text-left">
             Talk to your Doctor Today
           </h2>
@@ -42,7 +51,7 @@ export const DivWrapperByAnima = (): JSX.Element => {
         </div>
         
         {/* Mobile doctor image at the bottom */}
-        <div className="md:hidden w-full flex justify-center mt-4">
+        <div className="md:hidden w-full flex justify-center mt-4 relative z-10">
           <img
             className="w-[180px] h-auto object-cover"
             alt="Indian doctor posing"
