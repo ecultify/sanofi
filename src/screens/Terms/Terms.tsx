@@ -79,7 +79,7 @@ export const Terms = (): JSX.Element => {
         <footer className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row justify-between gap-4 md:items-center">
             <div className="[font-family:'Open_Sans',Helvetica] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6 text-center md:text-left">
-              LMRC code: GGI-CO-A1-AQS-300101634-AM-F24-0641
+              LMRC code: GGI-CO-A1-AQS-300101634-PE-D25-0021
             </div>
             <div className="[font-family:'Open_Sans',Helvetica] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6 text-center md:text-left">
               <a href="/privacy" className="hover:underline">Privacy Policy</a> | <a href="/terms" className="hover:underline">Terms &amp; Conditions</a>

@@ -32,28 +32,22 @@ export const Final = (): JSX.Element => {
         <section className="container mx-auto px-4 py-8 md:py-12">
           <Card className="w-full h-auto md:h-[610px] bg-[#5279f6] rounded-[30px] border border-solid border-[#6e91f7] relative overflow-hidden">
           <CardContent className="p-0">
-            <div className="w-full h-[600px] md:h-[608px] bg-[url(/image-37.png)] bg-cover bg-center md:bg-[100%_100%] relative flex flex-col items-center md:block">
+            <div className="w-full h-[600px] md:h-[608px] bg-[url(/HeroBannerBG.png)] bg-cover bg-center md:bg-[100%_100%] relative flex flex-col items-center md:block">
 
-              <div className={`text-center md:text-left mt-8 md:mt-0 md:absolute md:top-[124px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-normal text-white text-[24px] md:text-[32.5px] tracking-[0] leading-normal ${slideInFromLeft}`}>
+              <div className={`text-center md:text-left mt-8 md:mt-0 md:absolute md:top-[124px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-normal text-white text-[28px] md:text-[48px] tracking-[0] leading-normal ${slideInFromLeft}`}>
                 Traveling to the USA 🇺🇸 for Higher Studies?
               </div>
               
-              <div className={`text-center md:text-left px-4 md:px-0 mt-4 md:mt-0 md:absolute md:top-[180px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-bold text-white text-[20px] md:text-[28px] tracking-[0] leading-normal max-w-[90%] md:max-w-[480px] ${slideInFromLeft} ${delay200}`}>
+              <div className={`text-center md:text-left px-4 md:px-0 mt-4 md:mt-0 md:absolute md:top-[190px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-bold text-white text-[22px] md:text-[30px] tracking-[0] leading-normal max-w-[90%] md:max-w-[480px] ${slideInFromLeft} ${delay200}`}>
                 Consult a Doctor today to know more about Meningococcal Vaccine
               </div>
 
               <div className={`mt-10 md:mt-auto mb-6 md:mb-0 md:absolute md:top-[434px] md:left-[39px] w-full md:w-auto px-4 md:px-0 ${slideInFromBottom} ${delay400}`}>
                 <a href="https://www.practo.com/bangalore/pediatrician?utm_source=microsite&utm_medium=cta&utm_campaign=dr_reddys_vaccination_campaign" target="_blank" rel="noopener noreferrer" className="inline-block w-full">
-                  <Button className="w-full max-w-[400px] md:w-[500px] h-[60px] md:h-[72px] px-[40px] md:px-[50px] bg-white rounded-[10px] hover:bg-white/90 relative mx-auto md:mx-0">
-                    <span className="absolute left-[31px] top-1/2 transform -translate-y-1/2 font-['Open_Sans',Helvetica] font-semibold text-[#416af6] text-xl md:text-[26px]">
+                  <Button className="w-full max-w-[400px] md:w-[500px] h-[60px] md:h-[72px] px-[40px] md:px-[50px] bg-white rounded-[10px] hover:bg-white/90 relative mx-auto md:mx-0 group transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
+                    <span className="absolute left-[31px] top-1/2 transform -translate-y-1/2 font-['Open_Sans',Helvetica] font-semibold text-[#416af6] text-xl md:text-[26px] group-hover:text-[#2c4dbd] transition-colors duration-300">
                       Book your Appointment
                     </span>
-                    <img
-                      className="absolute w-[25px] md:w-[31px] h-[12px] md:h-[15px] top-1/2 transform -translate-y-1/2 right-[31px]"
-                      alt="Arrow"
-                      src="/arrow-1.svg"
-                      style={{ filter: 'invert(27%) sepia(97%) saturate(7491%) hue-rotate(222deg) brightness(90%) contrast(101%)' }}
-                    />
                   </Button>
                 </a>
               </div>
@@ -72,6 +66,9 @@ export const Final = (): JSX.Element => {
         <section className={`container mx-auto px-4 py-4 md:py-8 overflow-x-auto ${fadeIn} ${delay100}`}>
           <ElementUSStatesByAnima />
         </section>
+
+        {/* Add more spacing before the Group Section */}
+        <div className="py-10 md:py-16"></div>
 
         {/* Group Section */}
         <section className={`container mx-auto px-4 py-8 md:py-12 ${fadeIn} ${delay200}`}>
@@ -172,6 +169,22 @@ export const Final = (): JSX.Element => {
               <MenacwyByAnima />
             </CardContent>
           </Card>
+        </section>
+
+        {/* Disclaimer Section */}
+        <section className={`container mx-auto px-4 py-8 md:py-12 ${fadeIn} ${delay400}`}>
+          <h2 className="text-[32px] md:text-[42px] font-bold text-[#416af6] mb-6 md:mb-8">
+            Disclaimer
+          </h2>
+          
+          <div className="space-y-4">
+            <p className="[font-family:'Open_Sans',Helvetica] font-normal text-black text-sm md:text-base tracking-[0.20px] leading-6">
+              A Public Awareness Initiative by Dr. Reddy's. This communication does not substitute advice of a medical practitioner, Please consult your doctor for any medical advice. Although greatest possible care has been taken in preparation of this material, Dr Reddy's shall not be liable to any person for contents of the same. Images appearing herein are for illustration purposes only.
+            </p>
+            <p className="[font-family:'Open_Sans',Helvetica] font-normal text-black text-sm md:text-base tracking-[0.20px] leading-6">
+              The Products are distributed by Dr. Reddy's Laboratories Ltd. in India under authorization from Sanofi Healthcare India Pvt. Ltd." and "Sanofi Marks and Trademark belongs to Sanofi Healthcare India Pvt. Ltd
+            </p>
+          </div>
         </section>
 
         {/* Footer Section */}

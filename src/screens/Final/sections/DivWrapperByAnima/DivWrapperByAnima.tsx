@@ -36,12 +36,12 @@ export const DivWrapperByAnima = (): JSX.Element => {
 
           <div className="flex justify-center md:justify-start mb-4 md:mb-0">
             <a href="https://www.practo.com/bangalore/pediatrician?utm_source=microsite&utm_medium=cta&utm_campaign=dr_reddys_vaccination_campaign" target="_blank" rel="noopener noreferrer" className="inline-block w-full max-w-[400px] md:w-[500px]">
-              <Button className="mt-[15px] md:mt-[19px] w-full h-[60px] md:h-[72px] px-[40px] md:px-[50px] bg-[#092175] rounded-2xl hover:bg-[#092175]/90 relative">
-                <span className="absolute left-[31px] top-1/2 transform -translate-y-1/2 font-['Open_Sans',Helvetica] font-semibold text-white text-xl md:text-[26px]">
+              <Button className="mt-[15px] md:mt-[19px] w-full h-[60px] md:h-[72px] px-[40px] md:px-[50px] bg-[#092175] rounded-2xl hover:bg-[#092175]/90 relative group transition-all duration-300 hover:scale-[1.02] hover:shadow-lg transform-gpu">
+                <span className="absolute left-[31px] top-1/2 transform -translate-y-1/2 font-['Open_Sans',Helvetica] font-semibold text-white text-xl md:text-[26px] group-hover:text-white/90 transition-colors duration-300">
                   Book your Appointment
                 </span>
                 <img
-                  className="absolute w-[25px] md:w-[31px] h-[12px] md:h-[15px] top-1/2 transform -translate-y-1/2 right-[31px]"
+                  className="absolute w-[25px] md:w-[31px] h-[12px] md:h-[15px] top-1/2 transform -translate-y-1/2 right-[31px] transition-all duration-300 group-hover:translate-x-2 group-hover:opacity-80"
                   alt="Arrow"
                   src="/arrow-1.svg"
                 />
