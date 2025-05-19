@@ -28,9 +28,7 @@ export const FrameWrapperByAnima = (): JSX.Element => {
             Protect yourself from life-threatening meningitis. Talk to your Doctor/Pediatrician
             about vaccination against meningococcal meningitis, especially if you
             are planning to go to the US for higher education. Many colleges in
-            the US have made the meningitis Vaccination mandatory. Please find the
-            MenACWY Vaccination mandates for colleges and universities here:
-          </p>
+            the US have made the meningitis vaccination mandatory. Please find the            MenACWY vaccination mandates for colleges and universities here:          </p>
             <div className="flex justify-center">
             <a href="https://meningococcalvaccination.in/wp-content/uploads/2024/06/MenACWY-Vaccination-mandates-for-colleges.pdf" target="_blank" rel="noopener noreferrer" className="inline-block w-full max-w-[300px]">
               <Button className="w-full h-[60px] bg-[#49d6f9] rounded-2xl hover:bg-[#49d6f9]/90 transition-all duration-300 p-0 relative group hover:scale-[1.02] hover:shadow-lg transform-gpu">
@@ -67,11 +65,9 @@ export const FrameWrapperByAnima = (): JSX.Element => {
             </span>
           </h2>
 
-          <p className="absolute w-[513px] top-[167px] left-[631px] font-['Open_Sans',Helvetica] text-white text-lg tracking-[0.20px] leading-[27px]">
-            Protect yourself from life-threatening meningitis. Talk to your doctor
+          <p className="absolute w-[513px] top-[167px] left-[631px] font-['Open_Sans',Helvetica] text-white text-lg tracking-[0.20px] leading-[27px]">            Protect yourself from life-threatening meningitis. Talk to your doctor
             about vaccination against meningococcal meningitis, especially if you
-            are planning to go to the US for higher education. Many colleges in            the US have made the meningitis Vaccination mandatory. Please find the
-            MenACWY Vaccination mandates for colleges and universities here:
+            are planning to go to the US for higher education. Many colleges in            the US have made the meningitis vaccination mandatory. Please find the            MenACWY vaccination mandates for colleges and universities here:
           </p>          <a href="https://meningococcalvaccination.in/wp-content/uploads/2024/06/MenACWY-Vaccination-mandates-for-colleges.pdf" target="_blank" rel="noopener noreferrer" className="absolute w-[327px] h-[72px] top-[376px] left-[634px]">
             <Button className="w-full h-full bg-[#49d6f9] rounded-2xl hover:bg-[#49d6f9]/90 transition-all duration-300 p-0 relative group hover:scale-[1.02] hover:shadow-lg transform-gpu">
               <div className="flex items-center justify-center w-full h-full">

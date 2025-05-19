@@ -126,11 +126,9 @@ export const Final = (): JSX.Element => {
               </CardContent>
             </Card>
           </div>
-        </section>
-
-        {/* Frame Wrapper Section */}        <section className={`container mx-auto px-4 py-6 md:py-14 ${fadeIn} ${delay500}`}>
+        </section>        {/* Frame Wrapper Section */}        <section className={`container mx-auto px-4 py-6 md:py-8 ${fadeIn} ${delay500}`}>
           <FrameWrapperByAnima />
-        </section>        {/* Doctor Section */}        <section className={`container mx-auto px-4 py-6 md:py-14 ${fadeIn} ${delay300}`}>
+        </section>        {/* Doctor Section */}        <section className={`container mx-auto px-4 py-4 md:py-10 ${fadeIn} ${delay300}`}>
           <div className="relative">
             <DivWrapperByAnima />
           </div>        </section>        {/* References Section */}        <section className={`container mx-auto px-4 py-3 md:py-8 ${fadeIn} ${delay500}`}>
@@ -141,9 +139,8 @@ export const Final = (): JSX.Element => {
             <CardContent className="p-0 h-full">
               <MenacwyByAnima />
             </CardContent>
-          </Card>
-        </section>        {/* Disclaimer Section */}        <section className={`container mx-auto px-4 py-6 md:py-10 ${fadeIn} ${delay400}`}>
-          <h2 className="text-[32px] md:text-[42px] font-bold text-[#416af6] mb-6 md:mb-8">
+          </Card>        </section>        {/* Disclaimer Section */}        <section className={`container mx-auto px-4 py-6 md:py-10 ${fadeIn} ${delay400}`}>
+          <h2 className="text-[32px] md:text-[42px] font-bold text-[#416af6] mb-3 md:mb-4">
             Disclaimer
           </h2>
           
