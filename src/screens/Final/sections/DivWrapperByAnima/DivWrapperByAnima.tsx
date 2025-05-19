@@ -7,10 +7,9 @@ export const DivWrapperByAnima = (): JSX.Element => {
   return (
     <Card className="w-full h-auto md:h-[290px] bg-[#416af6] rounded-[30px] overflow-visible border border-solid pb-0">
       <CardContent className="p-0 h-full relative">
-        {/* Background flag image */}
-        <div className="absolute inset-0 w-full h-full overflow-hidden rounded-[30px]">
+        {/* Background flag image */}        <div className="absolute inset-0 w-full h-full overflow-hidden rounded-[30px]">
           <img
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover"
             alt="USA Flag Background"
             src="/flagbg.png"
           />

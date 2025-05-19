@@ -3,10 +3,9 @@ import React from "react";
 export const ElementUSStatesByAnima = (): JSX.Element => {
   return (
     <section className="w-full py-6 font-sans mx-auto px-2 md:px-0">
-      <div className="flex flex-col md:flex-row items-center">
-        {/* Did You Know container with image */}
+      <div className="flex flex-col md:flex-row items-center">        {/* Did You Know container with image */}
         <div className="relative w-[160px] md:w-[180px] flex-shrink-0 mx-auto md:mx-0 mb-4 md:mb-0">
-          <div className="border-4 border-[#5279F6] rounded-[16px] overflow-hidden">
+          <div className="border-4 border-[#5279F6] rounded-[16px] overflow-hidden p-[15px] bg-white">
             <img
               className="w-full h-auto"
               alt="Did You Know?"

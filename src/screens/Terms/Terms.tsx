@@ -1,20 +1,18 @@
-import React from "react";
 import { DivByAnima } from "../Final/sections/DivByAnima";
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "../../components/ui/card";
 
 export const Terms = (): JSX.Element => {
-  return (
-    <div className="bg-white flex flex-row justify-center w-full min-h-screen">
+  return (    <div className="bg-white flex flex-row justify-center w-full min-h-screen px-[15px] overflow-x-hidden">
       <div className="bg-white w-full max-w-[1440px]">
-        {/* Header Section */}
-        <header className="container mx-auto px-4 pt-10 pb-8">
-          <a href="/" className="inline-block">
+        {/* Header Section */}        <header className="container mx-auto px-4 pt-10 pb-8">
+          <Link to="/" className="inline-block">
             <img
               className="w-full max-w-[385px] h-auto object-cover"
               alt="Logo"
               src="/image-24.png"
             />
-          </a>
+          </Link>
         </header>
 
         {/* Main Content */}
@@ -76,13 +74,11 @@ export const Terms = (): JSX.Element => {
         {/* Footer Section */}
         <DivByAnima />
         
-        <footer className="container mx-auto px-4 py-8">
-          <div className="flex flex-col md:flex-row justify-between gap-4 md:items-center">
+        <footer className="container mx-auto px-4 py-8">          <div className="flex flex-col md:flex-row justify-between gap-4 md:items-center">
             <div className="[font-family:'Open_Sans',Helvetica] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6 text-center md:text-left">
-              LMRC code: GGI-CO-A1-AQS-300101634-PE-D25-0021
-            </div>
-            <div className="[font-family:'Open_Sans',Helvetica] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6 text-center md:text-left">
-              <a href="/privacy" className="hover:underline">Privacy Policy</a> | <a href="/terms" className="hover:underline">Terms &amp; Conditions</a>
+              
+            </div>            <div className="[font-family:'Open_Sans',Helvetica] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6 text-center md:text-left">
+              <Link to="/privacy" className="hover:underline">Privacy Policy</Link> | <Link to="/terms" className="hover:underline">Terms &amp; Conditions</Link>
             </div>
           </div>
         </footer>
