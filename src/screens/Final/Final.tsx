@@ -169,11 +169,10 @@ export const Final = (): JSX.Element => {
             </p>
             <p className="[font-family:'Open_Sans',Helvetica] font-normal text-black text-sm md:text-base tracking-[0.20px] leading-6">
               The Products are distributed by Dr. Reddy's Laboratories Ltd. in India under authorization from Sanofi Healthcare India Pvt. Ltd." and "Sanofi Marks and Trademark belongs to Sanofi Healthcare India Pvt. Ltd
-            </p>          </div>
-          
+            </p>          </div>          
           <div className="flex justify-end mt-6">
             <div className="[font-family:'Open_Sans',Helvetica] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6">
-              
+              LMRC code: GGI-CO-A1-AQS-300101634-PE-D25-0021
             </div>
           </div>
         </section>
