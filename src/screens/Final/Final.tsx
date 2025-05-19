@@ -18,7 +18,7 @@ import { fadeIn, slideInFromBottom, slideInFromLeft, slideInFromRight, delay100,
 export const Final = (): JSX.Element => {
   return (    <div className="bg-white flex flex-row justify-center w-full min-h-screen px-[15px] overflow-x-hidden">
       <div className="bg-white w-full max-w-[1440px]">
-        {/* Hero Banner Section */}        <header className="container mx-auto px-4 pt-10 pb-2">
+        {/* Hero Banner Section */}        <header className="container mx-auto px-4 pt-10 ">
           <Link to="/" className={`inline-block ${fadeIn}`}>
             <img
               className="w-full max-w-[385px] h-auto object-cover"
@@ -26,10 +26,8 @@ export const Final = (): JSX.Element => {
               src="/image-24.png"
             />
           </Link>
-        </header>
-
-        <section className="container mx-auto px-4 py-6 md:py-12">
-          <Card className="w-full h-auto md:h-[610px] bg-[#5279f6] rounded-[30px] border border-solid border-[#6e91f7] relative overflow-hidden">          <CardContent className="p-0">
+        </header>        <section className="container mx-auto px-4 py-4 md:py-10">
+          <Card className="w-full h-auto md:h-[610px] bg-[#5279f6] rounded-[30px] border border-solid border-[#6e91f7] relative overflow-hidden"><CardContent className="p-0">
             <div className="w-full h-[600px] md:h-[608px] md:px-[15px] bg-[url(/HeroBannerBG.png)] bg-cover bg-center md:bg-[100%_100%] relative flex flex-col items-center md:block">              <div className={`text-center md:text-left mt-8 md:mt-0 md:absolute md:top-[124px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-bold text-white text-[28px] md:text-[48px] tracking-[0] leading-normal md:max-w-[50%] z-10 ${slideInFromLeft}`}>
                 Traveling to the USA  for Higher Education?              </div><div className={`text-center md:text-left px-4 md:px-0 mt-4 md:mt-0 md:absolute md:top-[290px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-semibold text-white text-[22px] md:text-[25px] tracking-[0] leading-tight max-w-[90%] md:max-w-[500px] ${slideInFromLeft} ${delay200}`}>                Consult Your Doctor / Pediatrician Today, to know more about Meningococcal Vaccination before your travel                </div><div className={`mt-6 md:mt-auto mb-3.5 md:mb-0 md:absolute md:top-[430px] md:left-[39px] w-full md:w-auto px-4 md:px-0 ${slideInFromBottom} ${delay400}`}>
                 <a href="https://www.practo.com/bangalore/pediatrician?utm_source=microsite&utm_medium=cta&utm_campaign=dr_reddys_vaccination_campaign" target="_blank" rel="noopener noreferrer" className="inline-block w-full">
@@ -50,27 +48,27 @@ export const Final = (): JSX.Element => {
           </CardContent>
           </Card>
         </section>        {/* US States Section - restore to normal, visible on all devices */}
-        <section className={`container mx-auto px-4 py-4 md:py-8 overflow-x-auto ${fadeIn} ${delay100}`}>
+        <section className={`container mx-auto px-4 py-2 md:py-6 overflow-x-auto ${fadeIn} ${delay100}`}>
           <ElementUSStatesByAnima />
         </section>
 
         {/* Minimal spacing before the Group Section */}
-        <div className="py-1 md:py-4"></div>
+        <div className="py-0 md:py-2"></div>
 
         {/* Group Section */}
-        <section className={`container mx-auto px-4 py-8 md:py-12 ${fadeIn} ${delay200}`}>
+        <section className={`container mx-auto px-4 py-6 md:py-10 ${fadeIn} ${delay200}`}>
           <div className="w-full">
             <GroupByAnima />
           </div>
         </section>
 
         {/* Frame Section */}
-        <section className={`py-8 md:py-16 ${fadeIn} ${delay300}`}>
+        <section className={`py-6 md:py-14 ${fadeIn} ${delay300}`}>
           <FrameByAnima />
         </section>
 
         {/* Risk Info Section */}
-        <section className={`container mx-auto px-4 py-8 md:py-16 ${fadeIn} ${delay400}`}>
+        <section className={`container mx-auto px-4 py-6 md:py-14 ${fadeIn} ${delay400}`}>
           <h2 className="text-center text-[28px] md:text-[42px] text-[#416af6] font-normal mb-6 md:mb-12">
             <span className="tracking-[-0.42px]">Who is at risk of </span>
             <span className="font-bold tracking-[-0.42px]">
@@ -131,19 +129,13 @@ export const Final = (): JSX.Element => {
           </div>
         </section>
 
-        {/* Frame Wrapper Section */}
-        <section className={`container mx-auto px-4 py-8 md:py-16 ${fadeIn} ${delay500}`}>
+        {/* Frame Wrapper Section */}        <section className={`container mx-auto px-4 py-6 md:py-14 ${fadeIn} ${delay500}`}>
           <FrameWrapperByAnima />
-        </section>
-
-        {/* Doctor Section */}
-        <section className={`container mx-auto px-4 py-8 md:py-16 ${fadeIn} ${delay300}`}>
+        </section>        {/* Doctor Section */}        <section className={`container mx-auto px-4 py-6 md:py-14 ${fadeIn} ${delay300}`}>
           <div className="relative">
             <DivWrapperByAnima />
-          </div>
-        </section>        {/* References Section */}
-        <section className={`container mx-auto px-4 py-8 md:py-16 ${fadeIn} ${delay500}`}>
-          <h2 className="text-[32px] md:text-[42px] font-bold text-[#3655C1] mb-8 md:mb-12">
+          </div>        </section>        {/* References Section */}        <section className={`container mx-auto px-4 py-3 md:py-8 ${fadeIn} ${delay500}`}>
+          <h2 className="text-[32px] md:text-[42px] font-bold text-[#416AF6] mb-6 md:mb-10">
             References
           </h2>
 
@@ -152,8 +144,7 @@ export const Final = (): JSX.Element => {
               <MenacwyByAnima />
             </CardContent>
           </Card>
-        </section>        {/* Disclaimer Section */}
-        <section className={`container mx-auto px-4 py-8 md:py-12 ${fadeIn} ${delay400}`}>
+        </section>        {/* Disclaimer Section */}        <section className={`container mx-auto px-4 py-6 md:py-10 ${fadeIn} ${delay400}`}>
           <h2 className="text-[32px] md:text-[42px] font-bold text-[#416af6] mb-6 md:mb-8">
             Disclaimer
           </h2>
@@ -172,7 +163,7 @@ export const Final = (): JSX.Element => {
 
         {/* Footer Section */}
         <div className={`${fadeIn} ${delay500}`}>
-          <DivByAnima />        </div>          <footer className={`container mx-auto px-4 py-8 ${fadeIn} ${delay500}`}>          <div className="flex flex-col md:flex-row justify-end gap-4 md:items-center">
+          <DivByAnima />        </div>          <footer className={`container mx-auto px-4 py-6 ${fadeIn} ${delay500}`}>          <div className="flex flex-col md:flex-row justify-end gap-4 md:items-center">
             <div className="[font-family:'Open_Sans',Helvetica] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6 text-center md:text-right">
               <Link to="/privacy" className="hover:underline">Privacy Policy</Link> | <Link to="/terms" className="hover:underline">Terms &amp; Conditions</Link>
             </div>

@@ -18,9 +18,8 @@ export const GroupByAnima = (): JSX.Element => {
                 alt="Suitcase image"
                 src="/DYKSuitcase.png"
               />
-            </div>
-          </div><div className="w-full md:w-[70%] space-y-4 md:pl-4 md:pt-4">
-            <h2 className="font-['Open_Sans',Helvetica] text-neutral-0 text-2xl md:text-3xl lg:text-[36px] tracking-[-0.8px] leading-tight">
+            </div>          </div><div className="w-full md:w-[70%] space-y-8 md:pl-4 md:pt-4">
+            <h2 className="font-['Open_Sans',Helvetica] text-neutral-0 text-2xl md:text-3xl lg:text-[42px] tracking-[-0.8px] leading-tight">
               <span className="font-semibold tracking-[-0.45px]">
                 Why are international students at risk of{" "}
               </span>
@@ -29,7 +28,7 @@ export const GroupByAnima = (): JSX.Element => {
               </span>
             </h2>
 
-            <p className="font-['Open_Sans',Helvetica] text-neutral-0 text-base tracking-[0.20px] leading-[24px] text-center md:text-left">
+            <p className="font-['Open_Sans',Helvetica] text-neutral-0 text-lg md:text-[19px] tracking-[0.20px] leading-[28px] text-center md:text-left font-normal">
               College freshmen, particularly those who live in dormitories, are
               at modestly increased risk for meningococcal disease relative to
               other persons their age.
