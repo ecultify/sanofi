@@ -149,7 +149,7 @@ export const Final = (): JSX.Element => {
           
           <div className="space-y-4">
             <p className="[font-family:'Open_Sans',Helvetica] font-normal text-black text-sm md:text-base tracking-[0.20px] leading-6">
-              A Public Awareness Initiative by Dr. Reddy's. This communication does not substitute advice of a medical practitioner, Please consult your doctor for any medical advice. Although greatest possible care has been taken in preparation of this material, Dr Reddy's shall not be liable to any person for contents of the same. Images appearing herein are for illustration purposes only.
+              A Public Awareness Initiative by Dr. Reddy's. This communication does not substitute advice of a medical practitioner, Please consult your Doctor/Pediatrician for any medical advice. Although greatest possible care has been taken in preparation of this material, Dr Reddy's shall not be liable to any person for contents of the same. Images appearing herein are for illustration purposes only.
             </p>
             <p className="[font-family:'Open_Sans',Helvetica] font-normal text-black text-sm md:text-base tracking-[0.20px] leading-6">
               The Products are distributed by Dr. Reddy's Laboratories Ltd. in India under authorization from Sanofi Healthcare India Pvt. Ltd." and "Sanofi Marks and Trademark belongs to Sanofi Healthcare India Pvt. Ltd            </p>          </div>            <div className="flex justify-end mt-6">
