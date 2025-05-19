@@ -26,10 +26,9 @@ export const Final = (): JSX.Element => {
               src="/image-24.png"
             />
           </Link>
-        </header>        <section className="container mx-auto px-4 py-4 md:py-10">
-          <Card className="w-full h-auto md:h-[610px] bg-[#5279f6] rounded-[30px] border border-solid border-[#6e91f7] relative overflow-hidden"><CardContent className="p-0">
-            <div className="w-full h-[600px] md:h-[608px] md:px-[15px] bg-[url(/HeroBannerBG.png)] bg-cover bg-center md:bg-[100%_100%] relative flex flex-col items-center md:block">              <div className={`text-center md:text-left mt-8 md:mt-0 md:absolute md:top-[124px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-bold text-white text-[28px] md:text-[48px] tracking-[0] leading-normal md:max-w-[50%] z-10 ${slideInFromLeft}`}>
-                Traveling to the USA  for Higher Education?              </div><div className={`text-center md:text-left px-4 md:px-0 mt-4 md:mt-0 md:absolute md:top-[290px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-semibold text-white text-[22px] md:text-[25px] tracking-[0] leading-tight max-w-[90%] md:max-w-[500px] ${slideInFromLeft} ${delay200}`}>                Consult Your Doctor/Pediatrician Today, to know more about Meningococcal Vaccination before your travel                </div><div className={`mt-6 md:mt-auto mb-3.5 md:mb-0 md:absolute md:top-[430px] md:left-[39px] w-full md:w-auto px-4 md:px-0 ${slideInFromBottom} ${delay400}`}>
+        </header>        <section className="container mx-auto px-4 py-4 md:py-10">          <Card className="w-full h-auto md:h-[610px] bg-[#5279f6] rounded-[30px] border border-solid border-[#6e91f7] relative overflow-hidden"><CardContent className="p-0">
+            <div className="w-full h-[700px] md:h-[608px] md:px-[15px] bg-[url(/HeroBannerBG.png)] bg-cover bg-center md:bg-[100%_100%] relative flex flex-col items-center md:block"><div className={`text-center md:text-left mt-10 md:mt-0 md:absolute md:top-[124px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-bold text-white text-[28px] md:text-[48px] tracking-[0] leading-normal md:max-w-[50%] z-10 ${slideInFromLeft}`}>
+                Traveling to the USA  for Higher Education?              </div><div className={`text-center md:text-left px-4 md:px-0 mt-4 md:mt-0 md:absolute md:top-[290px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-semibold text-white text-[22px] md:text-[25px] tracking-[0] leading-tight max-w-[90%] md:max-w-[500px] ${slideInFromLeft} ${delay200}`}>                Consult Your Doctor/Pediatrician Today, to know more about Meningococcal Vaccination before your travel                </div>              <div className={`mt-8 md:mt-auto mb-[70px] md:mb-0 md:absolute md:top-[430px] md:left-[39px] w-full md:w-auto px-4 md:px-0 ${slideInFromBottom} ${delay400}`}>
                 <a href="https://www.practo.com/bangalore/pediatrician?utm_source=microsite&utm_medium=cta&utm_campaign=dr_reddys_vaccination_campaign" target="_blank" rel="noopener noreferrer" className="inline-block w-full">
                   <Button className="w-full max-w-[400px] md:w-[400px] h-[66px] md:h-[78px] py-2 px-6 md:px-8 bg-white rounded-[10px] hover:bg-white/90 relative mx-auto md:mx-0 group transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
                     <div className="flex items-center justify-center w-full h-full font-['Open_Sans',Helvetica] font-semibold text-[#416af6] text-xl md:text-[26px] group-hover:text-[#2c4dbd] transition-colors duration-300">
@@ -37,10 +36,8 @@ export const Final = (): JSX.Element => {
                     </div>
                   </Button>
                 </a>
-              </div>
-
-              <img
-                className={`w-[300px] md:w-[616px] h-auto md:h-[522px] mx-auto mt-6 md:mt-0 md:absolute md:bottom-0 md:top-[87px] md:left-[639px] object-contain md:object-cover ${slideInFromRight} ${delay300}`}
+              </div>              <img
+                className={`w-[330px] md:w-[616px] h-auto md:h-[522px] mx-auto mt-[-12px] md:mt-0 md:absolute md:bottom-0 md:top-[67px] md:left-[639px] object-contain md:object-cover ${slideInFromRight} ${delay300}`}
                 alt="Layer gigapixel"
                 src="/layer-2-gigapixel-very-compressed-scalse-4-00x.png"
               />
