@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 
@@ -32,18 +31,19 @@ export const FrameWrapperByAnima = (): JSX.Element => {
             the US have made the meningitis vaccine mandatory. Please find the
             MenACWY vaccine mandates for colleges and universities here:
           </p>
-          
-          <div className="flex justify-center">
+            <div className="flex justify-center">
             <a href="https://meningococcalvaccination.in/wp-content/uploads/2024/06/MenACWY-vaccine-mandates-for-colleges.pdf" target="_blank" rel="noopener noreferrer" className="inline-block w-full max-w-[300px]">
               <Button className="w-full h-[60px] bg-[#49d6f9] rounded-2xl hover:bg-[#49d6f9]/90 transition-all duration-300 p-0 relative group hover:scale-[1.02] hover:shadow-lg transform-gpu">
-                <span className="absolute left-[31px] top-1/2 transform -translate-y-1/2 [-webkit-text-stroke:0.8px_#092275] font-['Open_Sans',Helvetica] font-semibold text-[#092275] text-xl tracking-[0] leading-[normal] group-hover:opacity-90 transition-all duration-300">
-                  Download PDF
-                </span>
-                <img
-                  className="absolute w-[25px] h-[12px] top-1/2 transform -translate-y-1/2 right-[31px] transition-all duration-300 group-hover:translate-x-2 group-hover:opacity-80"
-                  alt="Arrow"
-                  src="/arrow-1.svg"
-                />
+                <div className="flex items-center justify-center w-full h-full">
+                  <span className="[-webkit-text-stroke:0.8px_#092275] font-['Open_Sans',Helvetica] font-semibold text-[#092275] text-xl tracking-[0] leading-[normal] group-hover:opacity-90 transition-all duration-300 mr-3">
+                    Download PDF
+                  </span>
+                  <img
+                    className="w-[25px] h-[12px] transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-80"
+                    alt="Arrow"
+                    src="/arrow-1.svg"
+                  />
+                </div>
               </Button>
             </a>
           </div>
@@ -74,18 +74,18 @@ export const FrameWrapperByAnima = (): JSX.Element => {
             are planning to go to the US for higher education. Many colleges in
             the US have made the meningitis vaccine mandatory. Please find the
             MenACWY vaccine mandates for colleges and universities here:
-          </p>
-
-          <a href="https://meningococcalvaccination.in/wp-content/uploads/2024/06/MenACWY-vaccine-mandates-for-colleges.pdf" target="_blank" rel="noopener noreferrer" className="absolute w-[327px] h-[72px] top-[361px] left-[634px]">
+          </p>          <a href="https://meningococcalvaccination.in/wp-content/uploads/2024/06/MenACWY-vaccine-mandates-for-colleges.pdf" target="_blank" rel="noopener noreferrer" className="absolute w-[327px] h-[72px] top-[361px] left-[634px]">
             <Button className="w-full h-full bg-[#49d6f9] rounded-2xl hover:bg-[#49d6f9]/90 transition-all duration-300 p-0 relative group hover:scale-[1.02] hover:shadow-lg transform-gpu">
-              <span className="absolute left-[31px] top-1/2 transform -translate-y-1/2 [-webkit-text-stroke:0.8px_#092275] font-['Open_Sans',Helvetica] font-semibold text-[#092275] text-[26px] tracking-[0] leading-[normal] group-hover:opacity-90 transition-all duration-300">
-                Download PDF
-              </span>
-              <img
-                className="absolute w-[31px] h-[15px] top-1/2 transform -translate-y-1/2 right-[31px] transition-all duration-300 group-hover:translate-x-2 group-hover:opacity-80"
-                alt="Arrow"
-                src="/arrow-1.svg"
-              />
+              <div className="flex items-center justify-center w-full h-full">
+                <span className="[-webkit-text-stroke:0.8px_#092275] font-['Open_Sans',Helvetica] font-semibold text-[#092275] text-[26px] tracking-[0] leading-[normal] group-hover:opacity-90 transition-all duration-300 mr-3">
+                  Download PDF
+                </span>
+                <img
+                  className="w-[31px] h-[15px] transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-80"
+                  alt="Arrow"
+                  src="/arrow-1.svg"
+                />
+              </div>
             </Button>
           </a>
 

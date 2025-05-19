@@ -18,7 +18,7 @@ import { fadeIn, slideInFromBottom, slideInFromLeft, slideInFromRight, delay100,
 export const Final = (): JSX.Element => {
   return (    <div className="bg-white flex flex-row justify-center w-full min-h-screen px-[15px] overflow-x-hidden">
       <div className="bg-white w-full max-w-[1440px]">
-        {/* Hero Banner Section */}        <header className="container mx-auto px-4 pt-10 pb-8">
+        {/* Hero Banner Section */}        <header className="container mx-auto px-4 pt-10 pb-2">
           <Link to="/" className={`inline-block ${fadeIn}`}>
             <img
               className="w-full max-w-[385px] h-auto object-cover"
@@ -28,14 +28,13 @@ export const Final = (): JSX.Element => {
           </Link>
         </header>
 
-        <section className="container mx-auto px-4 py-8 md:py-12">
+        <section className="container mx-auto px-4 py-6 md:py-12">
           <Card className="w-full h-auto md:h-[610px] bg-[#5279f6] rounded-[30px] border border-solid border-[#6e91f7] relative overflow-hidden">          <CardContent className="p-0">
             <div className="w-full h-[600px] md:h-[608px] md:px-[15px] bg-[url(/HeroBannerBG.png)] bg-cover bg-center md:bg-[100%_100%] relative flex flex-col items-center md:block">              <div className={`text-center md:text-left mt-8 md:mt-0 md:absolute md:top-[124px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-bold text-white text-[28px] md:text-[48px] tracking-[0] leading-normal md:max-w-[50%] z-10 ${slideInFromLeft}`}>
-                Traveling to the USA  for Higher Studies?              </div>                <div className={`text-center md:text-left px-4 md:px-0 mt-4 md:mt-0 md:absolute md:top-[290px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-semibold text-white text-[25px] md:text-[25px] tracking-[0] leading-tight max-w-[90%] md:max-w-[500px] ${slideInFromLeft} ${delay200}`}>                Consult Your Doctor / Pediatrician Today, to know more about Meningococcal Vaccination before your travel
-              </div><div className={`mt-6 md:mt-auto mb-6 md:mb-0 md:absolute md:top-[430px] md:left-[39px] w-full md:w-auto px-4 md:px-0 ${slideInFromBottom} ${delay400}`}>
+                Traveling to the USA  for Higher Education?              </div><div className={`text-center md:text-left px-4 md:px-0 mt-4 md:mt-0 md:absolute md:top-[290px] md:left-[39px] [font-family:'Open_Sans',Helvetica] font-semibold text-white text-[22px] md:text-[25px] tracking-[0] leading-tight max-w-[90%] md:max-w-[500px] ${slideInFromLeft} ${delay200}`}>                Consult Your Doctor / Pediatrician Today, to know more about Meningococcal Vaccination before your travel                </div><div className={`mt-6 md:mt-auto mb-3.5 md:mb-0 md:absolute md:top-[430px] md:left-[39px] w-full md:w-auto px-4 md:px-0 ${slideInFromBottom} ${delay400}`}>
                 <a href="https://www.practo.com/bangalore/pediatrician?utm_source=microsite&utm_medium=cta&utm_campaign=dr_reddys_vaccination_campaign" target="_blank" rel="noopener noreferrer" className="inline-block w-full">
-                  <Button className="w-full max-w-[400px] md:w-[400px] md:h-[72px] py-2 px-6 md:px-8 bg-white rounded-[10px] hover:bg-white/90 relative mx-auto md:mx-0 group transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
-                    <div className="w-full text-center font-['Open_Sans',Helvetica] font-semibold text-[#416af6] text-xl md:text-[26px] group-hover:text-[#2c4dbd] transition-colors duration-300">
+                  <Button className="w-full max-w-[400px] md:w-[400px] h-[66px] md:h-[78px] py-2 px-6 md:px-8 bg-white rounded-[10px] hover:bg-white/90 relative mx-auto md:mx-0 group transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
+                    <div className="flex items-center justify-center w-full h-full font-['Open_Sans',Helvetica] font-semibold text-[#416af6] text-xl md:text-[26px] group-hover:text-[#2c4dbd] transition-colors duration-300">
                       Book your Appointment
                     </div>
                   </Button>
@@ -50,15 +49,13 @@ export const Final = (): JSX.Element => {
             </div>
           </CardContent>
           </Card>
-        </section>
-
-        {/* US States Section - restore to normal, visible on all devices */}
+        </section>        {/* US States Section - restore to normal, visible on all devices */}
         <section className={`container mx-auto px-4 py-4 md:py-8 overflow-x-auto ${fadeIn} ${delay100}`}>
           <ElementUSStatesByAnima />
         </section>
 
-        {/* Add more spacing before the Group Section */}
-        <div className="py-10 md:py-16"></div>
+        {/* Minimal spacing before the Group Section */}
+        <div className="py-1 md:py-4"></div>
 
         {/* Group Section */}
         <section className={`container mx-auto px-4 py-8 md:py-12 ${fadeIn} ${delay200}`}>
@@ -144,11 +141,9 @@ export const Final = (): JSX.Element => {
           <div className="relative">
             <DivWrapperByAnima />
           </div>
-        </section>
-
-        {/* References Section */}
+        </section>        {/* References Section */}
         <section className={`container mx-auto px-4 py-8 md:py-16 ${fadeIn} ${delay500}`}>
-          <h2 className="text-[32px] md:text-[42px] font-bold text-[#416af6] mb-8 md:mb-12">
+          <h2 className="text-[32px] md:text-[42px] font-bold text-[#3655C1] mb-8 md:mb-12">
             References
           </h2>
 
@@ -168,21 +163,17 @@ export const Final = (): JSX.Element => {
               A Public Awareness Initiative by Dr. Reddy's. This communication does not substitute advice of a medical practitioner, Please consult your doctor for any medical advice. Although greatest possible care has been taken in preparation of this material, Dr Reddy's shall not be liable to any person for contents of the same. Images appearing herein are for illustration purposes only.
             </p>
             <p className="[font-family:'Open_Sans',Helvetica] font-normal text-black text-sm md:text-base tracking-[0.20px] leading-6">
-              The Products are distributed by Dr. Reddy's Laboratories Ltd. in India under authorization from Sanofi Healthcare India Pvt. Ltd." and "Sanofi Marks and Trademark belongs to Sanofi Healthcare India Pvt. Ltd
-            </p>          </div>          
-          <div className="flex justify-end mt-6">
-            <div className="[font-family:'Open_Sans',Helvetica] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6">
-              LMRC code: GGI-CO-A1-AQS-300101634-PE-D25-0021
+              The Products are distributed by Dr. Reddy's Laboratories Ltd. in India under authorization from Sanofi Healthcare India Pvt. Ltd." and "Sanofi Marks and Trademark belongs to Sanofi Healthcare India Pvt. Ltd            </p>          </div>            <div className="flex justify-end mt-6">
+            <div className="[font-family:'Open_Sans',Helvetica] font-bold text-[#092275] text-sm md:text-[20px] tracking-[0.20px] leading-6">
+              LMRC code: GGI-CO-A1-AQS-300101634-PE-E25-0538
             </div>
           </div>
         </section>
 
         {/* Footer Section */}
         <div className={`${fadeIn} ${delay500}`}>
-          <DivByAnima />
-        </div>
-          <footer className={`container mx-auto px-4 py-8 ${fadeIn} ${delay500}`}>          <div className="flex flex-col md:flex-row justify-between gap-4 md:items-center">
-            <div className="[font-family:'Open_Sans',Helvetica] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6 text-center md:text-left">
+          <DivByAnima />        </div>          <footer className={`container mx-auto px-4 py-8 ${fadeIn} ${delay500}`}>          <div className="flex flex-col md:flex-row justify-end gap-4 md:items-center">
+            <div className="[font-family:'Open_Sans',Helvetica] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6 text-center md:text-right">
               <Link to="/privacy" className="hover:underline">Privacy Policy</Link> | <Link to="/terms" className="hover:underline">Terms &amp; Conditions</Link>
             </div>
           </div>

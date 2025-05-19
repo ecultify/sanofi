@@ -47,10 +47,8 @@ export const FrameByAnima = (): JSX.Element => {
         className: "w-[80px] h-[80px] md:w-[85px] md:h-[85px]"
       }
     },
-  ];
-
-  return (    <div className="relative w-screen left-[50%] right-[50%] -mx-[50vw] bg-[#4169f6]">
-      <section className="w-full py-6 md:py-10 overflow-hidden px-4 md:px-8 container mx-auto">
+  ];  return (    <div className="relative w-screen left-[50%] right-[50%] -mx-[50vw] bg-[#4169f6]">
+      <section className="w-full py-10 md:py-[70px] overflow-hidden px-4 md:px-8 container mx-auto">
         {/* Main section title */}
         <div className={`text-center mb-6 md:mb-8 ${slideInFromBottom}`}>
           <h1 className="[font-family:'Open_Sans',Helvetica] font-normal text-neutral-0 text-[30px] md:text-[42px] tracking-[-1.00px] leading-[1.2] md:leading-[50.4px]">
