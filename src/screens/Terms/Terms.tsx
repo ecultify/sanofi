@@ -1,11 +1,14 @@
 import { DivByAnima } from "../Final/sections/DivByAnima";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "../../components/ui/card";
+import { useScrollToTop } from "../../lib/scrollToTop";
 
 export const Terms = (): JSX.Element => {
+  // Scroll to top when component mounts
+  useScrollToTop();
+  
   return (    <div className="bg-white flex flex-row justify-center w-full min-h-screen px-[15px] overflow-x-hidden">
-      <div className="bg-white w-full max-w-[1440px]">
-        {/* Header Section */}        <header className="container mx-auto px-4 pt-10 pb-8">
+      <div className="bg-white w-full max-w-[1440px]">        {/* Header Section */}        <header className="container mx-auto px-4 pt-10 pb-4">
           <Link to="/" className="inline-block">
             <img
               className="w-full max-w-[385px] h-auto object-cover"
@@ -16,7 +19,7 @@ export const Terms = (): JSX.Element => {
         </header>
 
         {/* Main Content */}
-        <section className="container mx-auto px-4 py-8 md:py-12">
+        <section className="container mx-auto px-4 py-4 md:py-8">
           <h1 className="text-[32px] md:text-[42px] font-bold text-[#416af6] mb-8 md:mb-12">
             Terms & Conditions
           </h1>

@@ -11,11 +11,15 @@ import { FrameByAnima } from "./sections/FrameByAnima";
 import { FrameWrapperByAnima } from "./sections/FrameWrapperByAnima";
 import { GroupByAnima } from "./sections/GroupByAnima";
 import { MenacwyByAnima } from "./sections/MenacwyByAnima";
+import { useScrollToTop } from "../../lib/scrollToTop";
 
 // Import animation utility
 import { fadeIn, slideInFromBottom, slideInFromLeft, slideInFromRight, delay100, delay200, delay300, delay400, delay500 } from "../../lib/animation";
 
 export const Final = (): JSX.Element => {
+  // Scroll to top when component mounts
+  useScrollToTop();
+  
   return (    <div className="bg-white flex flex-row justify-center w-full min-h-screen px-[15px] md:px-[30px] overflow-x-hidden">
       <div className="bg-white w-full max-w-[1440px]">
         {/* Hero Banner Section */}        <header className="container mx-auto px-4 pt-10 ">
@@ -134,7 +138,7 @@ export const Final = (): JSX.Element => {
           <div className="relative">
             <DivWrapperByAnima />
           </div>        </section>        {/* References Section */}        <section className={`container mx-auto px-4 py-3 md:py-8 ${fadeIn} ${delay500}`}>
-          <h2 className="text-[32px] md:text-[42px] font-bold text-[#416AF6] mb-6 md:mb-10">
+          <h2 className="text-[32px] md:text-[42px] font-bold text-[#416AF6] mb-6 md:mb-10 text-center md:text-left">
             References          </h2>
 
           <Card className="w-full h-auto md:h-[338px] rounded-3xl border border-solid border-[#6e91f7]">
