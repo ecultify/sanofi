@@ -47,11 +47,10 @@ export const FrameByAnima = (): JSX.Element => {
         className: "w-[80px] h-[80px] md:w-[85px] md:h-[85px]"
       }
     },
-  ];  return (    <div className="relative w-screen left-[50%] right-[50%] -mx-[50vw] bg-[#4169f6]">
-      <section className="w-full py-10 md:py-[70px] overflow-hidden px-4 md:px-8 container mx-auto">
+  ];  return (    <div className="relative w-screen left-[50%] right-[50%] -mx-[50vw] bg-[#4169f6]">      <section className="w-full py-10 md:py-[70px] overflow-hidden px-4 md:px-8 container mx-auto">
         {/* Main section title */}
-        <div className={`text-center mb-6 md:mb-8 ${slideInFromBottom}`}>
-          <h1 className="[font-family:'Open_Sans',Helvetica] font-normal text-neutral-0 text-[30px] md:text-[42px] tracking-[-1.00px] leading-[1.2] md:leading-[50.4px]">
+        <div className={`text-center mb-6 md:mb-12 ${slideInFromBottom}`}>
+          <h1 className="[font-family:'Open_Sans'] font-normal text-neutral-0 text-[30px] md:text-[42px] tracking-[-1.00px] leading-[1.2] md:leading-[50.4px]">
             <span className="tracking-[-0.42px]">What is </span>
             <span className="font-bold tracking-[-0.42px]">
               Meningococcal Meningitis?{" "}
@@ -62,8 +61,8 @@ export const FrameByAnima = (): JSX.Element => {
         {/* Main content */}
         <div className="w-full">
           <div className="flex flex-col md:flex-row gap-6 md:gap-8">
-            {/* Left side - Image - Increased width from 1/3 to 2/5 */}            <div className={`w-full md:w-2/5 relative mb-6 md:mb-0 flex justify-center md:justify-start ${slideInFromLeft} ${delay200}`}>              <div className="relative w-full max-w-[350px] md:max-w-none md:w-full h-full">
-                <div className="w-full h-auto aspect-square md:h-[420px] rounded-3xl overflow-hidden">
+            {/* Left side - Image - Increased width from 1/3 to 2/5 */}            <div className={`w-full md:w-2/5 relative mb-4 md:mb-0 flex justify-center md:justify-start ${slideInFromLeft} ${delay200}`}>              <div className="relative w-full max-w-[350px] md:max-w-none md:w-full h-full">
+                <div className="w-full h-auto aspect-square md:h-[420px] max-h-[200px] md:max-h-none rounded-3xl overflow-hidden">
                   <img
                     className="w-full h-full object-cover"
                     alt="Image"
@@ -71,24 +70,20 @@ export const FrameByAnima = (): JSX.Element => {
                   />
                 </div>
               </div>
-            </div>{/* Right side - Info cards - Adjusted width from 2/3 to 3/5 */}
-            <div className="w-full md:w-3/5">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+            </div>{/* Right side - Info cards - Adjusted width from 2/3 to 3/5 */}            <div className="w-full md:w-3/5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-[25px] md:gap-4">
                 {infoCards.map((card, index) => (
                   <Card
                     key={card.id}                    className={`bg-[#5279f6] rounded-[27.79px] border-[1.16px] border-solid border-[#6e91f7] h-auto md:h-[200px] ${slideInFromRight} ${index === 0 ? delay100 : index === 1 ? delay200 : index === 2 ? delay300 : delay400}`}
                   >
-                    <CardContent className="p-4 md:p-5 flex flex-col items-center md:items-start">
-                      {/* Render PNG icon with improved mobile centering */}
+                    <CardContent className="p-4 md:p-5 flex flex-col items-center md:items-start">                      {/* Render PNG icon with improved mobile centering */}
                       {card.singleIcon && (
-                        <div className="flex justify-center w-full md:block md:w-auto mb-3 md:mb-4">
+                        <div className={`flex justify-center w-full md:block md:w-auto mb-3 md:mb-4 ${(card.id === 3 || card.id === 4) ? 'md:-mt-[4px]' : ''}`}>
                           <img
                             className={`object-contain ${card.singleIcon.className}`}
                             alt={card.singleIcon.alt}
-                            src={card.singleIcon.src}
-                          />
-                        </div>
-                      )}                      <p className={`[font-family:'Open_Sans',Helvetica] font-bold text-neutral-0 text-sm md:text-base tracking-[0.23px] leading-[1.4] md:leading-[24px] text-center md:text-left mt-1 md:mt-0 ${(card.id === 3 || card.id === 4) ? '-mt-[20px]' : ''}`}>
+                            src={card.singleIcon.src}                          />                        </div>
+                      )}                      <p className={`[font-family:'Open_Sans'] font-bold text-neutral-0 text-sm md:text-base tracking-[0.23px] leading-[1.4] md:leading-[24px] text-center md:text-left mt-1 md:mt-0 ${(card.id === 3 || card.id === 4) ? '-mt-[20px] md:-mt-[25px]' : ''}`}>
                         {card.content}{card.superscript}
                       </p>
                     </CardContent>

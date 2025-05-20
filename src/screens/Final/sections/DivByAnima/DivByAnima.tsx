@@ -24,9 +24,8 @@ export const DivByAnima = (): JSX.Element => {
 
           <div className={`space-y-6 max-w-[815px] text-center md:text-left ${slideInFromBottom} ${delay100}`}>
             {addresses.map((address, index) => (
-              <div key={index} className={`flex items-start gap-4 ${fadeIn} ${index === 0 ? '' : delay200}`}>
-                <MapPinIcon className="h-4 w-4 mt-1 flex-shrink-0" />
-                <p className="font-['Open_Sans',Helvetica] text-base tracking-[0.20px] leading-6">
+              <div key={index} className={`flex items-start gap-4 ${fadeIn} ${index === 0 ? '' : delay200}`}>                <MapPinIcon className="h-4 w-4 mt-1 flex-shrink-0 text-white" />
+                <p className="font-['Open_Sans'] text-base tracking-[0.20px] leading-6">
                   {address}
                 </p>
               </div>

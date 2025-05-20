@@ -15,27 +15,22 @@ export const DivWrapperByAnima = (): JSX.Element => {
             src="/flagbg.png"
           />
         </div>
-        {/* Desktop doctor image */}
-        <div className="hidden md:block absolute left-[114px] bottom-0 z-10">
+        {/* Desktop doctor image */}        <div className="hidden md:block absolute left-[134px] bottom-0 z-10">
           <img
             className="w-[223px] h-[344px] object-cover translate-y-0"
             alt="Indian doctor posing"
             src="/indian-doctor-posing-1.png"
           />
-        </div>
-        <div className="pt-6 md:pt-6 pb-4 md:pb-0 px-4 md:pl-[498px] md:pr-6 relative z-10 flex flex-col justify-center md:h-full">
-          <div className="md:my-auto">
-            <h2 className="font-['Open_Sans',Helvetica] font-bold text-white text-[32px] md:text-[44.4px] tracking-[-0.92px] leading-tight md:leading-[53.2px] text-center md:text-left">
+        </div>        <div className="pt-6 md:pt-0 pb-4 md:pb-0 px-4 md:pl-[478px] md:pr-6 relative z-10 flex flex-col md:items-center justify-center md:h-full">
+          <div className="md:flex md:flex-col md:justify-center md:h-full">            <h2 className="font-['Open_Sans'] font-bold text-white text-[30.5px] md:text-[44.4px] tracking-[-0.92px] leading-tight md:leading-[53.2px] text-center md:text-left">
               Talk to your Doctor/Pediatrician Today
-            </h2>
-            <p className="mt-[15px] md:mt-[20px] opacity-80 font-['Open_Sans',Helvetica] font-bold text-white text-base md:text-lg tracking-[0.20px] leading-normal md:leading-[27px] text-center md:text-left">
+            </h2>            <p className="mt-[15px] md:mt-[20px] opacity-80 font-['Open_Sans'] font-bold text-white text-base md:text-lg tracking-[0.20px] leading-normal md:leading-[27px] text-center md:text-left">
               To know more about Meningococcal Vaccination before your travel.
             </p>
-            <div className="flex justify-center md:justify-start mb-0.5 md:mb-0">
-              <a href="https://www.practo.com/bangalore/pediatrician?utm_source=microsite&utm_medium=cta&utm_campaign=dr_reddys_vaccination_campaign" target="_blank" rel="noopener noreferrer" className="inline-block w-full max-w-[400px] md:w-[380px]">
-                <Button className="mt-[8px] md:mt-[10px] w-full h-[60px] md:h-[72px] bg-[#092175] rounded-2xl hover:bg-[#092175]/90 transition-all duration-300 p-0 relative group hover:scale-[1.02] hover:shadow-lg transform-gpu">
+            <div className="flex justify-center md:justify-start mb-0.5 md:mb-0">              <a href="https://www.practo.com/bangalore/pediatrician?utm_source=microsite&utm_medium=cta&utm_campaign=dr_reddys_vaccination_campaign" target="_blank" rel="noopener noreferrer" className="inline-block w-full max-w-[380px] md:w-[380px]">
+                <Button className="mt-[23px] md:mt-[15px] w-full h-[55px] md:h-[72px] bg-[#092175] rounded-2xl hover:bg-[#092175]/90 transition-all duration-300 p-0 relative group hover:scale-[1.02] hover:shadow-lg transform-gpu">
                   <div className="flex items-center justify-center w-full h-full">
-                    <span className="font-['Open_Sans',Helvetica] font-semibold text-white text-xl md:text-[26px] group-hover:text-white/90 transition-all duration-300 mr-3">
+                    <span className="font-['Open_Sans'] font-semibold text-white text-[19px] md:text-[26px] group-hover:text-white/90 transition-all duration-300 mr-3">
                       Book your Appointment
                     </span>
                     <img
@@ -43,14 +38,12 @@ export const DivWrapperByAnima = (): JSX.Element => {
                       alt="Arrow"
                       src="/arrow-1.svg"
                     />
-                  </div>
-                </Button>
+                  </div>                </Button>
               </a>
             </div>
-          </div> {/* Added this closing div tag */}
-        </div>
-        {/* Mobile doctor image at the bottom */}
-        <div className="md:hidden w-full flex justify-center relative z-10" style={{ height: "280px" }}>
+          </div>
+        </div>        {/* Mobile doctor image at the bottom */}
+        <div className="md:hidden w-full flex justify-center relative z-10" style={{ height: "275px" }}>
           <div className="absolute bottom-0">
             <img
               className="w-[180px] h-auto object-cover"

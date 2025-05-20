@@ -15,6 +15,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

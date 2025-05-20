@@ -22,7 +22,7 @@ export const Privacy = (): JSX.Element => {
           </h1>
 
           <Card className="w-full rounded-3xl border border-solid border-[#6e91f7] mb-8">
-            <CardContent className="p-6 font-['Open_Sans',Helvetica] text-base tracking-[0.20px] leading-6">
+            <CardContent className="p-6 font-['Open_Sans'] text-base tracking-[0.20px] leading-6">
               <h2 className="text-[24px] font-semibold text-[#416af6] mb-4">
                 Our Commitment and Approach towards Data Privacy
               </h2>
@@ -179,9 +179,9 @@ export const Privacy = (): JSX.Element => {
         <DivByAnima />
         
         <footer className="container mx-auto px-4 py-8">          <div className="flex flex-col md:flex-row justify-between gap-4 md:items-center">
-            <div className="[font-family:'Open_Sans',Helvetica] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6 text-center md:text-left">
+            <div className="[font-family:'Open_Sans'] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6 text-center md:text-left">
               
-            </div>            <div className="[font-family:'Open_Sans',Helvetica] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6 text-center md:text-left">
+            </div>            <div className="[font-family:'Open_Sans'] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6 text-center md:text-left">
               <Link to="/privacy" className="hover:underline">Privacy Policy</Link> | <Link to="/terms" className="hover:underline">Terms &amp; Conditions</Link>
             </div>
           </div>

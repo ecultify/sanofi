@@ -3,11 +3,10 @@ import { Card, CardContent } from "../../../../components/ui/card";
 
 export const FrameWrapperByAnima = (): JSX.Element => {
   return (
-    <Card className="w-full h-auto md:h-[558px] bg-[#416af6] rounded-[30px] overflow-hidden relative">
-      <CardContent className="p-0 h-full">
-        {/* Mobile layout */}
-        <div className="flex flex-col md:hidden p-6">
-          <h2 className="font-['Open_Sans',Helvetica] text-neutral-0 text-[28px] text-center tracking-[-1.06px] leading-[1.3] whitespace-normal mb-6">
+    <Card className="w-full h-auto md:h-[568px] bg-[#416af6] rounded-[30px] overflow-hidden relative">
+      <CardContent className="p-0 h-full">        {/* Mobile layout */}
+        <div className="flex flex-col md:hidden p-6 px-4">
+          <h2 className="font-['Open_Sans'] text-neutral-0 text-[28px] text-center tracking-[-1.06px] leading-[1.3] whitespace-normal mb-6">
             <span className="font-semibold tracking-[-0.45px]">
               College Students and{" "}
             </span>
@@ -23,8 +22,7 @@ export const FrameWrapperByAnima = (): JSX.Element => {
               src="/image-4.png"
             />
           </div>
-          
-          <p className="font-['Open_Sans',Helvetica] text-white text-base tracking-[0.20px] leading-[1.5] mb-6 text-center">
+            <p className="font-['Open_Sans'] text-white text-base tracking-[0.20px] leading-[1.5] mb-6 text-center px-2">
             Protect yourself from life-threatening meningitis. Talk to your Doctor/Pediatrician
             about vaccination against meningococcal meningitis, especially if you
             are planning to go to the US for higher education. Many colleges in
@@ -33,7 +31,7 @@ export const FrameWrapperByAnima = (): JSX.Element => {
             <a href="https://meningococcalvaccination.in/wp-content/uploads/2024/06/MenACWY-Vaccination-mandates-for-colleges.pdf" target="_blank" rel="noopener noreferrer" className="inline-block w-full max-w-[300px]">
               <Button className="w-full h-[60px] bg-[#49d6f9] rounded-2xl hover:bg-[#49d6f9]/90 transition-all duration-300 p-0 relative group hover:scale-[1.02] hover:shadow-lg transform-gpu">
                 <div className="flex items-center justify-center w-full h-full">
-                  <span className="[-webkit-text-stroke:0.8px_#092275] font-['Open_Sans',Helvetica] font-semibold text-[#092275] text-xl tracking-[0] leading-[normal] group-hover:opacity-90 transition-all duration-300 mr-3">
+                  <span className="[-webkit-text-stroke:0.8px_#092275] font-['Open_Sans'] font-semibold text-[#092275] text-xl tracking-[0] leading-[normal] group-hover:opacity-90 transition-all duration-300 mr-3">
                     Download PDF
                   </span>
                   <img
@@ -56,7 +54,7 @@ export const FrameWrapperByAnima = (): JSX.Element => {
               src="/image-4.png"
             />          </div>
 
-          <h2 className="absolute w-full text-center h-[58px] top-[65px] font-['Open_Sans',Helvetica] text-neutral-0 text-[42px] tracking-[-1.06px] leading-[58.0px]">
+          <h2 className="absolute w-full text-center h-[58px] top-[65px] font-['Open_Sans'] text-neutral-0 text-[42px] tracking-[-1.06px] leading-[58.0px]">
             <span className="font-semibold tracking-[-0.45px]">
               College Students and{" "}
             </span>
@@ -65,13 +63,13 @@ export const FrameWrapperByAnima = (): JSX.Element => {
             </span>
           </h2>
 
-          <p className="absolute w-[513px] top-[167px] left-[631px] font-['Open_Sans',Helvetica] text-white text-lg tracking-[0.20px] leading-[27px]">            Protect yourself from life-threatening meningitis. Talk to your doctor
+          <p className="absolute w-[513px] top-[167px] left-[631px] font-['Open_Sans'] text-white text-lg tracking-[0.20px] leading-[27px]">            Protect yourself from life-threatening meningitis. Talk to your doctor
             about vaccination against meningococcal meningitis, especially if you
             are planning to go to the US for higher education. Many colleges in            the US have made the meningitis vaccination mandatory. Please find the            MenACWY vaccination mandates for colleges and universities here:
           </p>          <a href="https://meningococcalvaccination.in/wp-content/uploads/2024/06/MenACWY-Vaccination-mandates-for-colleges.pdf" target="_blank" rel="noopener noreferrer" className="absolute w-[327px] h-[72px] top-[376px] left-[634px]">
             <Button className="w-full h-full bg-[#49d6f9] rounded-2xl hover:bg-[#49d6f9]/90 transition-all duration-300 p-0 relative group hover:scale-[1.02] hover:shadow-lg transform-gpu">
               <div className="flex items-center justify-center w-full h-full">
-                <span className="[-webkit-text-stroke:0.8px_#092275] font-['Open_Sans',Helvetica] font-semibold text-[#092275] text-[26px] tracking-[0] leading-[normal] group-hover:opacity-90 transition-all duration-300 mr-3">
+                <span className="[-webkit-text-stroke:0.8px_#092275] font-['Open_Sans'] font-semibold text-[#092275] text-[26px] tracking-[0] leading-[normal] group-hover:opacity-90 transition-all duration-300 mr-3">
                   Download PDF
                 </span>
                 <img

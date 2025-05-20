@@ -46,9 +46,9 @@ module.exports = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
-      },
-      fontFamily: {
+      },      fontFamily: {
         sans: [
+          "'Open Sans'",
           "ui-sans-serif",
           "system-ui",
           "sans-serif",
@@ -105,10 +105,16 @@ module.exports = {
         500: "500ms",
         600: "600ms",
         700: "700ms",
-        800: "800ms",
-      },
+        800: "800ms",      },
     },
-    container: { center: true, padding: "2rem", screens: { "2xl": "1400px" } },
+    container: { 
+      center: true, 
+      padding: {
+        DEFAULT: "2rem",
+        md: "calc(2rem + 15px)"  // Increased by 15px for desktop view
+      }, 
+      screens: { "2xl": "1400px" } 
+    },
   },
   plugins: [
     function ({ addUtilities, theme }) {

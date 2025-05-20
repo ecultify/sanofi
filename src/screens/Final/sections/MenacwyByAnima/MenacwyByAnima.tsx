@@ -54,7 +54,7 @@ export const MenacwyByAnima = (): JSX.Element => {
       isLink: false,
     },
   ];  return (
-  <div className="p-6 font-['Open_Sans',Helvetica] text-[#3655C1] text-base tracking-[0.20px] leading-6">
+  <div className="p-6 font-['Open_Sans'] text-[#3655C1] text-base tracking-[0.20px] leading-6">
     <span className="mb-3 block">*MenACWY: Meningococcal Vaccination against serogroup A, C, W & Y</span>
     <ol className="list-decimal pl-5 space-y-1">
       <li className="break-words whitespace-normal">
