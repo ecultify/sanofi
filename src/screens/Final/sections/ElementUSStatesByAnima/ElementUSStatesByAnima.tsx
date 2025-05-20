@@ -18,9 +18,8 @@ export const ElementUSStatesByAnima = (): JSX.Element => {
             />
           </div>
         </div>
-          {/* Information right section */}        <div className="bg-[#e5ebff] border-2 md:border-r-2 md:border-t-2 md:border-b-2 md:border-l-0 border-solid border-[#5279f6] py-3 md:py-4 px-4 md:px-6 flex-grow rounded-2xl md:rounded-l-none md:rounded-r-2xl mt-[85px] md:mt-0 relative">            <h2 className="text-center md:text-left pt-[25px] md:pt-0">
-            <span className="font-bold text-[#5279f6] text-[17px] md:text-[27.9px] leading-tight md:leading-[36px]">
-              24 U.S. states require proof of MenACWY (Meningococcal) Vaccination<sup>1</sup>
+          {/* Information right section */}        <div className="bg-[#e5ebff] border-2 md:border-r-2 md:border-t-2 md:border-b-2 md:border-l-0 border-solid border-[#5279f6] py-3 md:py-4 px-4 md:px-6 flex-grow rounded-2xl md:rounded-l-none md:rounded-r-2xl mt-[85px] md:mt-0 relative">            <h2 className="text-center md:text-left pt-[25px] md:pt-0">            <span className="font-bold text-[#5279f6] text-[17px] md:text-[27.9px] leading-tight md:leading-[36px]">
+              24 U.S. states require proof of MenACWY (Meningococcal) Vaccination<sup className="text-[13px] md:text-[21px]">1</sup>
             </span>
             <br />
             <span className="text-black text-[16px] md:text-[21.5px] leading-tight md:leading-[28px]">

@@ -14,14 +14,13 @@ export const DivWrapperByAnima = (): JSX.Element => {
             src="/flagbg.png"
             loading="lazy"
           />
-        </div>
-        {/* Desktop doctor image */}        <div className="hidden md:block absolute left-[134px] bottom-0 z-10">          <img
+        </div>        {/* Desktop doctor image */}        <div className="hidden md:block absolute left-[170px] bottom-0 z-10">          <img
             className="w-[223px] h-[344px] object-cover translate-y-0"
             alt="Indian doctor posing"
             src="/indian-doctor-posing-1.png"
             loading="lazy"
           />
-        </div>        <div className="pt-6 md:pt-0 pb-4 md:pb-0 px-4 md:pl-[478px] md:pr-6 relative z-10 flex flex-col md:items-center justify-center md:h-full">
+        </div>        <div className="pt-6 md:pt-0 pb-4 md:pb-0 px-4 md:pl-[430px] md:pr-6 relative z-10 flex flex-col md:items-center justify-center md:h-full">
           <div className="md:flex md:flex-col md:justify-center md:h-full">
             {/* For mobile view */}
             <h2 className="md:hidden text-center text-[26.5px] text-white font-normal">
@@ -31,9 +30,8 @@ export const DivWrapperByAnima = (): JSX.Element => {
                   Doctor/Pediatrician Today
                 </div>
               </div>
-            </h2>
-            {/* For desktop view - preserve original style */}
-            <h2 className="hidden md:block font-['Open_Sans'] font-bold text-white text-[44.4px] tracking-[-0.92px] leading-[53.2px] text-left">
+            </h2>            {/* For desktop view - preserve original style */}
+            <h2 className="hidden md:block font-['Open_Sans'] font-bold text-white text-[42px] tracking-[-0.92px] leading-[53.2px] text-left">
               Talk to your Doctor/Pediatrician Today
             </h2><p className="mt-[15px] md:mt-[20px] opacity-80 font-['Open_Sans'] font-bold text-white text-base md:text-lg tracking-[0.20px] leading-normal md:leading-[27px] text-center md:text-left">
               To know more about Meningococcal Vaccination before your travel.
