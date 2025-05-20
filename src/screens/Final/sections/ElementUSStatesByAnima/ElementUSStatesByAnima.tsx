@@ -4,16 +4,17 @@ export const ElementUSStatesByAnima = (): JSX.Element => {
     <section className="w-full py-6 [font-family:'Open_Sans'] mx-auto px-2 md:px-0">      
       <div className="flex flex-col md:flex-row items-center">          {/* Did You Know container with image */}          <div className="relative w-[230px] md:w-[180px] flex-shrink-0 mx-auto md:mx-0 mb-[-115px] md:mb-0 z-10">
           <div className="border-4 border-[#5279F6] rounded-[16px] overflow-hidden p-[10px] md:p-[15px] bg-white">
-            {/* Different images for mobile and desktop */}
-            <img
+            {/* Different images for mobile and desktop */}            <img
               className="hidden md:block w-full h-auto"
               alt="Did You Know?"
               src="/diyouknow.png"
+              loading="lazy"
             />
             <img
               className="md:hidden w-full h-auto object-cover"
               alt="Did You Know?"
               src="/didyouknow.png"
+              loading="lazy"
             />
           </div>
         </div>

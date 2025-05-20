@@ -1,6 +1,6 @@
-import React from "react";
+import { memo } from "react";
 
-export const MenacwyByAnima = (): JSX.Element => {
+export const MenacwyByAnima = memo((): JSX.Element => {
   // References data for better maintainability
   const references = [
     {
@@ -78,4 +78,4 @@ export const MenacwyByAnima = (): JSX.Element => {
     </ol>
   </div>
   );
-};
+});

@@ -15,11 +15,11 @@ export const FrameWrapperByAnima = (): JSX.Element => {
             </span>
           </h2>
           
-          <div className="w-full rounded-2xl overflow-hidden mb-6">
-            <img
+          <div className="w-full rounded-2xl overflow-hidden mb-6">            <img
               className="w-full h-auto object-cover scale-x-[-1]"
               alt="College students"
               src="/image-4.png"
+              loading="lazy"
             />
           </div>
             <p className="font-['Open_Sans'] text-white text-base tracking-[0.20px] leading-[1.5] mb-6 text-center px-2">
@@ -33,11 +33,11 @@ export const FrameWrapperByAnima = (): JSX.Element => {
                 <div className="flex items-center justify-center w-full h-full">
                   <span className="[-webkit-text-stroke:0.8px_#092275] font-['Open_Sans'] font-semibold text-[#092275] text-xl tracking-[0] leading-[normal] group-hover:opacity-90 transition-all duration-300 mr-3">
                     Download PDF
-                  </span>
-                  <img
+                  </span>                  <img
                     className="w-[25px] h-[12px] transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-80"
                     alt="Arrow"
                     src="/arrow-1.svg"
+                    loading="lazy"
                   />
                 </div>
               </Button>
@@ -47,12 +47,12 @@ export const FrameWrapperByAnima = (): JSX.Element => {
       
         {/* Desktop layout */}
         <div className="hidden md:block h-full">
-          <div className="absolute w-[488px] h-[330px] top-[168px] left-[66px] rounded-3xl overflow-hidden">
-            <img
+          <div className="absolute w-[488px] h-[330px] top-[168px] left-[66px] rounded-3xl overflow-hidden">            <img
               className="w-full h-full object-cover scale-x-[-1]"
               alt="College students"
               src="/image-4.png"
-            />          </div>
+              loading="lazy"
+            /></div>
 
           <h2 className="absolute w-full text-center h-[58px] top-[65px] font-['Open_Sans'] text-neutral-0 text-[42px] tracking-[-1.06px] leading-[58.0px]">
             <span className="font-semibold tracking-[-0.45px]">
@@ -71,20 +71,19 @@ export const FrameWrapperByAnima = (): JSX.Element => {
               <div className="flex items-center justify-center w-full h-full">
                 <span className="[-webkit-text-stroke:0.8px_#092275] font-['Open_Sans'] font-semibold text-[#092275] text-[26px] tracking-[0] leading-[normal] group-hover:opacity-90 transition-all duration-300 mr-3">
                   Download PDF
-                </span>
-                <img
+                </span>                <img
                   className="w-[31px] h-[15px] transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-80"
                   alt="Arrow"
                   src="/arrow-1.svg"
+                  loading="lazy"
                 />
               </div>
             </Button>
-          </a>
-
-          <img
+          </a>          <img
             className="absolute w-[235px] h-[125px] top-[433px] left-[1029px]"
             alt="Decorative ellipse"
             src="/ellipse-2630.svg"
+            loading="lazy"
           />
         </div>
       </CardContent>

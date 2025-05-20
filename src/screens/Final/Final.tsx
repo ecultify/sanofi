@@ -1,20 +1,22 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
-
-// Import all section components
-import { DivByAnima } from "./sections/DivByAnima";
-import { DivWrapperByAnima } from "./sections/DivWrapperByAnima";
-import { ElementUSStatesByAnima } from "./sections/ElementUSStatesByAnima/ElementUSStatesByAnima";
-import { FrameByAnima } from "./sections/FrameByAnima";
-import { FrameWrapperByAnima } from "./sections/FrameWrapperByAnima";
-import { GroupByAnima } from "./sections/GroupByAnima";
-import { MenacwyByAnima } from "./sections/MenacwyByAnima";
-import { useScrollToTop } from "../../lib/scrollToTop";
+import { LoadingFallback } from "../../components/LoadingFallback";
+import { LazyLoad } from "../../components/LazyLoad";
 
 // Import animation utility
 import { fadeIn, slideInFromBottom, slideInFromLeft, slideInFromRight, delay100, delay200, delay300, delay400, delay500 } from "../../lib/animation";
+import { useScrollToTop } from "../../lib/scrollToTop";
+
+// Lazy load section components
+const DivByAnima = lazy(() => import("./sections/DivByAnima").then(module => ({ default: module.DivByAnima })));
+const DivWrapperByAnima = lazy(() => import("./sections/DivWrapperByAnima").then(module => ({ default: module.DivWrapperByAnima })));
+const ElementUSStatesByAnima = lazy(() => import("./sections/ElementUSStatesByAnima/ElementUSStatesByAnima").then(module => ({ default: module.ElementUSStatesByAnima })));
+const FrameByAnima = lazy(() => import("./sections/FrameByAnima").then(module => ({ default: module.FrameByAnima })));
+const FrameWrapperByAnima = lazy(() => import("./sections/FrameWrapperByAnima").then(module => ({ default: module.FrameWrapperByAnima })));
+const GroupByAnima = lazy(() => import("./sections/GroupByAnima").then(module => ({ default: module.GroupByAnima })));
+const MenacwyByAnima = lazy(() => import("./sections/MenacwyByAnima").then(module => ({ default: module.MenacwyByAnima })));
 
 export const Final = (): JSX.Element => {
   // Scroll to top when component mounts
@@ -23,11 +25,11 @@ export const Final = (): JSX.Element => {
   return (    <div className="bg-white flex flex-row justify-center w-full min-h-screen px-[15px] md:px-[30px] overflow-x-hidden">
       <div className="bg-white w-full max-w-[1440px]">
         {/* Hero Banner Section */}        <header className="container mx-auto px-4 pt-10 ">
-          <Link to="/" className={`inline-block ${fadeIn}`}>
-            <img
+          <Link to="/" className={`inline-block ${fadeIn}`}>            <img
               className="w-full max-w-[385px] h-auto object-cover"
               alt="Logo"
               src="/image-24.png"
+              loading="lazy"
             />
           </Link>        </header>        <section className="container mx-auto px-4 py-4 md:py-10">          <Card className="w-full h-auto md:h-[580px] bg-[#5279f6] rounded-[30px] border-none relative overflow-hidden"><CardContent className="p-0">
             <div className="w-full h-[645px] md:h-[578px] md:px-[15px] bg-[url(/HeroBannerBG.png)] bg-cover bg-center md:bg-[100%_100%] relative flex flex-col items-center md:block"><div className={`text-center md:text-left mt-10 md:mt-0 md:absolute md:top-[124px] md:left-[39px] [font-family:'Open_Sans'] font-bold text-white text-[28px] md:text-[48px] tracking-[0] leading-tight md:leading-[1.05] md:max-w-[50%] z-10 ${slideInFromLeft}`}>
@@ -42,27 +44,32 @@ export const Final = (): JSX.Element => {
                 className={`w-[330px] md:w-[616px] h-auto md:h-[522px] mx-auto mt-[-35px] md:mt-0 md:absolute md:bottom-0 md:top-[67px] md:left-[639px] object-contain md:object-cover ${slideInFromRight} ${delay300}`}
                 alt="Layer gigapixel"
                 src="/layer-2-gigapixel-very-compressed-scalse-4-00x.png"
+                loading="lazy"
               />
             </div>
           </CardContent>
           </Card>
         </section>        {/* US States Section - restore to normal, visible on all devices */}
         <section className={`container mx-auto px-4 py-2 md:py-6 overflow-x-auto ${fadeIn} ${delay100}`}>
-          <ElementUSStatesByAnima />
+          <Suspense fallback={<div className="min-h-[100px] flex items-center justify-center"><div className="w-8 h-8 border-4 border-[#416AF6] border-t-transparent rounded-full animate-spin"></div></div>}>
+            <ElementUSStatesByAnima />
+          </Suspense>
         </section>
 
-        {/* Minimal spacing before the Group Section */}
-        <div className="py-0 md:py-2"></div>
-
-        {/* Group Section */}
+        {/* Implement lazy loading for section components */}
+        <div className="py-0 md:py-2"></div>        {/* Group Section */}
         <section className={`container mx-auto px-4 py-6 md:py-10 ${fadeIn} ${delay200}`}>
           <div className="w-full">
-            <GroupByAnima />
+            <Suspense fallback={<div className="min-h-[200px] flex items-center justify-center"><div className="w-8 h-8 border-4 border-[#416AF6] border-t-transparent rounded-full animate-spin"></div></div>}>
+              <GroupByAnima />
+            </Suspense>
           </div>        </section>
 
         {/* Frame Section */}
         <section className={`py-6 md:py-7 ${fadeIn} ${delay300}`}>
-          <FrameByAnima />
+          <Suspense fallback={<div className="min-h-[200px] flex items-center justify-center"><div className="w-8 h-8 border-4 border-[#416AF6] border-t-transparent rounded-full animate-spin"></div></div>}>
+            <FrameByAnima />
+          </Suspense>
         </section>
 
         {/* Risk Info Section */}
@@ -133,19 +140,31 @@ export const Final = (): JSX.Element => {
             </Card>
           </div>
         </section>        {/* Frame Wrapper Section */}        <section className={`container mx-auto px-4 py-6 md:py-8 ${fadeIn} ${delay500}`}>
-          <FrameWrapperByAnima />
+          <LazyLoad>
+            <Suspense fallback={<div className="min-h-[200px] flex items-center justify-center"><div className="w-8 h-8 border-4 border-[#416AF6] border-t-transparent rounded-full animate-spin"></div></div>}>
+              <FrameWrapperByAnima />
+            </Suspense>
+          </LazyLoad>
         </section>        {/* Doctor Section */}        <section className={`container mx-auto px-4 py-4 md:py-10 ${fadeIn} ${delay300}`}>
           <div className="relative">
-            <DivWrapperByAnima />
+            <LazyLoad>
+              <Suspense fallback={<div className="min-h-[200px] flex items-center justify-center"><div className="w-8 h-8 border-4 border-[#416AF6] border-t-transparent rounded-full animate-spin"></div></div>}>
+                <DivWrapperByAnima />
+              </Suspense>
+            </LazyLoad>
           </div>        </section>        {/* References Section */}        <section className={`container mx-auto px-4 py-3 md:py-8 ${fadeIn} ${delay500}`}>
           <h2 className="text-[32px] md:text-[42px] font-bold text-[#416AF6] mb-6 md:mb-10 text-center md:text-left">
             References          </h2>
 
           <Card className="w-full h-auto md:h-[338px] rounded-3xl border border-solid border-[#6e91f7]">
             <CardContent className="p-0 h-full">
-              <MenacwyByAnima />
+              <LazyLoad>
+                <Suspense fallback={<div className="min-h-[200px] flex items-center justify-center"><div className="w-8 h-8 border-4 border-[#416AF6] border-t-transparent rounded-full animate-spin"></div></div>}>
+                  <MenacwyByAnima />
+                </Suspense>
+              </LazyLoad>
             </CardContent>
-          </Card>        </section>        {/* Disclaimer Section */}        <section className={`container mx-auto px-4 py-6 md:py-10 ${fadeIn} ${delay400}`}>          <h2 className="text-[32px] md:text-[42px] font-bold text-[#416af6] mb-3 md:mb-4 text-center md:text-left">
+          </Card>        </section>{/* Disclaimer Section */}        <section className={`container mx-auto px-4 py-6 md:py-10 ${fadeIn} ${delay400}`}>          <h2 className="text-[32px] md:text-[42px] font-bold text-[#416af6] mb-3 md:mb-4 text-center md:text-left">
             Disclaimer
           </h2>
           
@@ -159,11 +178,14 @@ export const Final = (): JSX.Element => {
               LMRC code: GGI-CO-A1-AQS-300101634-PE-E25-0538
             </div>
           </div>
-        </section>
-
-        {/* Footer Section */}
+        </section>        {/* Footer Section */}
         <div className={`${fadeIn} ${delay500}`}>
-          <DivByAnima />        </div>          <footer className={`container mx-auto px-4 py-6 ${fadeIn} ${delay500}`}>          <div className="flex flex-col md:flex-row justify-end gap-4 md:items-center">
+          <LazyLoad>
+            <Suspense fallback={<div className="min-h-[100px] flex items-center justify-center"><div className="w-8 h-8 border-4 border-[#416AF6] border-t-transparent rounded-full animate-spin"></div></div>}>
+              <DivByAnima />
+            </Suspense>
+          </LazyLoad>
+        </div><footer className={`container mx-auto px-4 py-6 ${fadeIn} ${delay500}`}>          <div className="flex flex-col md:flex-row justify-end gap-4 md:items-center">
             <div className="[font-family:'Open_Sans'] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6 text-center md:text-right">
               <Link to="/privacy" className="hover:underline">Privacy Policy</Link> | <Link to="/terms" className="hover:underline">Terms &amp; Conditions</Link>
             </div>
