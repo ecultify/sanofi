@@ -6,13 +6,14 @@ export const FrameWrapperByAnima = (): JSX.Element => {
     <Card className="w-full h-auto md:h-[568px] bg-[#416af6] rounded-[30px] overflow-hidden relative">
       <CardContent className="p-0 h-full">        {/* Mobile layout */}
         <div className="flex flex-col md:hidden p-6 px-4">
-          <h2 className="font-['Open_Sans'] text-neutral-0 text-[28px] text-center tracking-[-1.06px] leading-[1.3] whitespace-normal mb-6">
-            <span className="font-semibold tracking-[-0.45px]">
-              College Students and{" "}
-            </span>
-            <span className="font-bold tracking-[-0.45px]">
-              Meningococcal Vaccination
-            </span>
+          <h2 className="text-center text-[26.5px] text-neutral-0 font-normal mb-6">
+            {/* Mobile version - 2 lines */}
+            <div>
+              <div className="tracking-[-0.42px]">College Students and</div>
+              <div className="font-bold tracking-[-0.42px]">
+                Meningococcal Vaccination
+              </div>
+            </div>
           </h2>
           
           <div className="w-full rounded-2xl overflow-hidden mb-6">            <img

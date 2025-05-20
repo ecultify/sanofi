@@ -22,9 +22,20 @@ export const DivWrapperByAnima = (): JSX.Element => {
             loading="lazy"
           />
         </div>        <div className="pt-6 md:pt-0 pb-4 md:pb-0 px-4 md:pl-[478px] md:pr-6 relative z-10 flex flex-col md:items-center justify-center md:h-full">
-          <div className="md:flex md:flex-col md:justify-center md:h-full">            <h2 className="font-['Open_Sans'] font-bold text-white text-[30.5px] md:text-[44.4px] tracking-[-0.92px] leading-tight md:leading-[53.2px] text-center md:text-left">
+          <div className="md:flex md:flex-col md:justify-center md:h-full">
+            {/* For mobile view */}
+            <h2 className="md:hidden text-center text-[26.5px] text-white font-normal">
+              <div>
+                <div className="tracking-[-0.42px]">Talk to your</div>
+                <div className="font-bold tracking-[-0.42px]">
+                  Doctor/Pediatrician Today
+                </div>
+              </div>
+            </h2>
+            {/* For desktop view - preserve original style */}
+            <h2 className="hidden md:block font-['Open_Sans'] font-bold text-white text-[44.4px] tracking-[-0.92px] leading-[53.2px] text-left">
               Talk to your Doctor/Pediatrician Today
-            </h2>            <p className="mt-[15px] md:mt-[20px] opacity-80 font-['Open_Sans'] font-bold text-white text-base md:text-lg tracking-[0.20px] leading-normal md:leading-[27px] text-center md:text-left">
+            </h2><p className="mt-[15px] md:mt-[20px] opacity-80 font-['Open_Sans'] font-bold text-white text-base md:text-lg tracking-[0.20px] leading-normal md:leading-[27px] text-center md:text-left">
               To know more about Meningococcal Vaccination before your travel.
             </p>
             <div className="flex justify-center md:justify-start mb-0.5 md:mb-0">              <a href="https://www.practo.com/bangalore/pediatrician?utm_source=microsite&utm_medium=cta&utm_campaign=dr_reddys_vaccination_campaign" target="_blank" rel="noopener noreferrer" className="inline-block w-full max-w-[380px] md:w-[380px]">
