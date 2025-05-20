@@ -138,33 +138,26 @@ export const Final = (): JSX.Element => {
                 </div>
               </CardContent>
             </Card>
-          </div>
-        </section>        {/* Frame Wrapper Section */}        <section className={`container mx-auto px-4 py-6 md:py-8 ${fadeIn} ${delay500}`}>
-          <LazyLoad>
-            <Suspense fallback={<div className="min-h-[200px] flex items-center justify-center"><div className="w-8 h-8 border-4 border-[#416AF6] border-t-transparent rounded-full animate-spin"></div></div>}>
-              <FrameWrapperByAnima />
-            </Suspense>
-          </LazyLoad>
+          </div>        </section>        {/* Frame Wrapper Section */}        <section className={`container mx-auto px-4 py-6 md:py-8 ${fadeIn} ${delay500}`}>
+          <Suspense fallback={<div className="min-h-[200px] flex items-center justify-center"><div className="w-8 h-8 border-4 border-[#416AF6] border-t-transparent rounded-full animate-spin"></div></div>}>
+            <FrameWrapperByAnima />
+          </Suspense>
         </section>        {/* Doctor Section */}        <section className={`container mx-auto px-4 py-4 md:py-10 ${fadeIn} ${delay300}`}>
           <div className="relative">
-            <LazyLoad>
-              <Suspense fallback={<div className="min-h-[200px] flex items-center justify-center"><div className="w-8 h-8 border-4 border-[#416AF6] border-t-transparent rounded-full animate-spin"></div></div>}>
-                <DivWrapperByAnima />
-              </Suspense>
-            </LazyLoad>
+            <Suspense fallback={<div className="min-h-[200px] flex items-center justify-center"><div className="w-8 h-8 border-4 border-[#416AF6] border-t-transparent rounded-full animate-spin"></div></div>}>
+              <DivWrapperByAnima />
+            </Suspense>
           </div>        </section>        {/* References Section */}        <section className={`container mx-auto px-4 py-3 md:py-8 ${fadeIn} ${delay500}`}>
           <h2 className="text-[32px] md:text-[42px] font-bold text-[#416AF6] mb-6 md:mb-10 text-center md:text-left">
             References          </h2>
 
           <Card className="w-full h-auto md:h-[338px] rounded-3xl border border-solid border-[#6e91f7]">
             <CardContent className="p-0 h-full">
-              <LazyLoad>
-                <Suspense fallback={<div className="min-h-[200px] flex items-center justify-center"><div className="w-8 h-8 border-4 border-[#416AF6] border-t-transparent rounded-full animate-spin"></div></div>}>
-                  <MenacwyByAnima />
-                </Suspense>
-              </LazyLoad>
+              <Suspense fallback={<div className="min-h-[200px] flex items-center justify-center"><div className="w-8 h-8 border-4 border-[#416AF6] border-t-transparent rounded-full animate-spin"></div></div>}>
+                <MenacwyByAnima />
+              </Suspense>
             </CardContent>
-          </Card>        </section>{/* Disclaimer Section */}        <section className={`container mx-auto px-4 py-6 md:py-10 ${fadeIn} ${delay400}`}>          <h2 className="text-[32px] md:text-[42px] font-bold text-[#416af6] mb-3 md:mb-4 text-center md:text-left">
+          </Card></section>{/* Disclaimer Section */}        <section className={`container mx-auto px-4 py-6 md:py-10 ${fadeIn} ${delay400}`}>          <h2 className="text-[32px] md:text-[42px] font-bold text-[#416af6] mb-3 md:mb-4 text-center md:text-left">
             Disclaimer
           </h2>
           
@@ -177,15 +170,12 @@ export const Final = (): JSX.Element => {
             <div className="[font-family:'Open_Sans'] font-bold text-[#092275] text-[12.5px] md:text-[20px] tracking-[0.20px] leading-6 text-center md:text-right">
               LMRC code: GGI-CO-A1-AQS-300101634-PE-E25-0538
             </div>
-          </div>
-        </section>        {/* Footer Section */}
+          </div>        </section>        {/* Footer Section */}
         <div className={`${fadeIn} ${delay500}`}>
-          <LazyLoad>
-            <Suspense fallback={<div className="min-h-[100px] flex items-center justify-center"><div className="w-8 h-8 border-4 border-[#416AF6] border-t-transparent rounded-full animate-spin"></div></div>}>
-              <DivByAnima />
-            </Suspense>
-          </LazyLoad>
-        </div><footer className={`container mx-auto px-4 py-6 ${fadeIn} ${delay500}`}>          <div className="flex flex-col md:flex-row justify-end gap-4 md:items-center">
+          <Suspense fallback={<div className="min-h-[100px] flex items-center justify-center"><div className="w-8 h-8 border-4 border-[#416AF6] border-t-transparent rounded-full animate-spin"></div></div>}>
+            <DivByAnima />
+          </Suspense>
+        </div><footer className={`container mx-auto px-4 py-6 ${fadeIn} ${delay500}`}><div className="flex flex-col md:flex-row justify-end gap-4 md:items-center">
             <div className="[font-family:'Open_Sans'] font-bold text-[#416af6] text-sm md:text-base tracking-[0.20px] leading-6 text-center md:text-right">
               <Link to="/privacy" className="hover:underline">Privacy Policy</Link> | <Link to="/terms" className="hover:underline">Terms &amp; Conditions</Link>
             </div>
