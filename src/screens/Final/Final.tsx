@@ -20,7 +20,7 @@ const MenacwyByAnima = lazy(() => import("./sections/MenacwyByAnima").then(modul
 
 export const Final = (): JSX.Element => {  // Scroll to top when component mounts
   useScrollToTop();
-    return (    <div className="bg-white flex flex-row justify-center w-full min-h-screen px-[15px] md:px-[55px] overflow-x-hidden">
+    return (    <div className="bg-white flex flex-row justify-center w-full min-h-screen px-[15px] md:px-[80px] overflow-x-hidden">
       <div className="bg-white w-full max-w-[1440px]">
         {/* Hero Banner Section */}        <header className="container mx-auto px-4 pt-10 ">
           <Link to="/" className={`inline-block ${fadeIn}`}>            <img

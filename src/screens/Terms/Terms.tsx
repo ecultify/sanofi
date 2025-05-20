@@ -5,7 +5,7 @@ import { useScrollToTop } from "../../lib/scrollToTop";
 
 export const Terms = (): JSX.Element => {  // Scroll to top when component mounts
   useScrollToTop();
-    return (    <div className="bg-white flex flex-row justify-center w-full min-h-screen px-[15px] overflow-x-hidden">
+    return (    <div className="bg-white flex flex-row justify-center w-full min-h-screen px-[15px] md:px-[80px] overflow-x-hidden">
       <div className="bg-white w-full max-w-[1440px]">{/* Header Section */}<header className="container mx-auto px-4 pt-10 pb-4">
           <Link to="/" className="inline-block">
             <img
