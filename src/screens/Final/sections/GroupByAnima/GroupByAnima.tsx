@@ -1,13 +1,12 @@
 import React from "react";
 import { Card, CardContent } from "../../../../components/ui/card";
 
-export const GroupByAnima = (): JSX.Element => {  return (    <div className="w-full py-0 md:py-2 relative">
-      {/* Mobile image */}
-      <div className="relative md:hidden w-full h-[170px] flex justify-center mb-[-60px] z-10">        <img
+export const GroupByAnima = (): JSX.Element => {  return (    <div className="w-full py-0 md:py-2 relative">      {/* Mobile image */}
+      <div className="relative md:hidden w-full h-[170px] flex justify-center mb-[-40px] z-10">        <img
           className="w-[200px] h-[200px] object-contain"
           alt="Suitcase image"
           src="/DYKSuitcase.png"
-          loading="lazy"        /></div>        <Card className="w-full bg-[#5279f6] rounded-[30px] border border-solid border-[#6e91f7] overflow-visible">        <CardContent className="p-5 pt-[40px] md:pt-0 md:px-8 md:py-2 flex flex-col md:flex-row items-center md:items-center text-center md:text-left h-auto md:min-h-[240px]">{/* Desktop: Left side with image */}<div className="hidden md:block md:w-[30%] relative">            <div className="absolute left-[-30px] top-[-215px]">              <img
+          loading="lazy"        /></div><Card className="w-full bg-[#5279f6] rounded-[30px] border border-solid border-[#6e91f7] overflow-visible">        <CardContent className="p-5 pt-[60px] md:pt-0 md:px-8 md:py-2 flex flex-col md:flex-row items-center md:items-center text-center md:text-left h-auto md:min-h-[240px]">{/* Desktop: Left side with image */}<div className="hidden md:block md:w-[30%] relative">            <div className="absolute left-[-30px] top-[-215px]">              <img
                 className="w-auto h-[400px] object-contain"
                 alt="Suitcase image"
                 src="/DYKSuitcase.png"
